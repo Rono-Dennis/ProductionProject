@@ -1,0 +1,230 @@
+2023-04-13 16:43:57.075  INFO 33740 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.15.1 on LP-TECH-0VMQ with PID 33740 (C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug\target\classes started by lamech.ngeno in C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug)
+2023-04-13 16:43:57.093  INFO 33740 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2023-04-13 16:43:58.120  INFO 33740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 16:43:58.138  INFO 33740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2023-04-13 16:44:00.570  INFO 33740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8401 (http)
+2023-04-13 16:44:00.589  INFO 33740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 16:44:00.589  INFO 33740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-13 16:44:00.945  INFO 33740 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-13 16:44:00.946  INFO 33740 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3739 ms
+2023-04-13 16:44:01.517  INFO 33740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2023-04-13 16:44:01.608  INFO 33740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2023-04-13 16:44:01.845  INFO 33740 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 16:44:02.454  INFO 33740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-13 16:44:03.742  INFO 33740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-13 16:44:03.796  INFO 33740 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-04-13 16:44:06.068  INFO 33740 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 16:44:06.077  INFO 33740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2023-04-13 16:44:06.999  WARN 33740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 16:44:07.089  INFO 33740 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-13 16:44:07.582  INFO 33740 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-04-13 16:44:07.610  INFO 33740 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-04-13 16:44:07.705  INFO 33740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8401 (http) with context path ''
+2023-04-13 16:44:07.737  INFO 33740 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 11.672 seconds (JVM running for 12.958)
+2023-04-13 16:44:07.747  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-04-13 16:44:10.555  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[9]
+2023-04-13 16:44:13.680  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:20.791  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:21.200  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:44:28.262  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08311201}
+2023-04-13 16:44:28.262 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-04-13 16:44:28.263 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:44:29.959  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:31.778  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:31.799  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:44:32.572  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08311301}
+2023-04-13 16:44:32.572 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-04-13 16:44:32.573 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:44:34.935  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:37.497  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:37.516  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:44:38.159  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08311401}
+2023-04-13 16:44:38.159 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-04-13 16:44:38.160 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:44:40.410  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:42.913  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:42.939  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:44:43.815  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08311501}
+2023-04-13 16:44:43.816 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-04-13 16:44:43.818 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:44:46.693  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:48.947  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:48.968  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:44:50.047  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08311601}
+2023-04-13 16:44:50.049 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-04-13 16:44:50.050 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:44:52.477  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:54.941  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:54.958  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:44:55.537  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08311701}
+2023-04-13 16:44:55.538 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-04-13 16:44:55.539 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:44:56.997  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:59.308  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:44:59.324  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:44:59.922  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08311801}
+2023-04-13 16:44:59.922 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-04-13 16:44:59.923 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:45:01.699  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:45:06.060  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:45:06.080  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:45:07.201  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08311901}
+2023-04-13 16:45:07.202 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-04-13 16:45:07.203 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:45:09.563  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:45:13.863  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:45:13.887  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:45:15.006  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08312001}
+2023-04-13 16:45:15.007 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-04-13 16:45:15.008 ERROR 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:45:15.009  INFO 33740 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-04-13 16:48:57.734  INFO 26644 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.15.1 on LP-TECH-0VMQ with PID 26644 (C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug\target\classes started by lamech.ngeno in C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug)
+2023-04-13 16:48:57.742  INFO 26644 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2023-04-13 16:48:59.311  INFO 26644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 16:48:59.341  INFO 26644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2023-04-13 16:49:01.441  INFO 26644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8401 (http)
+2023-04-13 16:49:01.452  INFO 26644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 16:49:01.453  INFO 26644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-13 16:49:01.734  INFO 26644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-13 16:49:01.735  INFO 26644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3850 ms
+2023-04-13 16:49:02.247  INFO 26644 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2023-04-13 16:49:02.344  INFO 26644 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2023-04-13 16:49:02.554  INFO 26644 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 16:49:02.837  INFO 26644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-13 16:49:05.598  INFO 26644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-13 16:49:05.638  INFO 26644 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-04-13 16:49:15.710  INFO 26644 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 16:49:15.719  INFO 26644 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2023-04-13 16:49:16.436  WARN 26644 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 16:49:16.513  INFO 26644 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-13 16:49:16.847  INFO 26644 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-04-13 16:49:16.867  INFO 26644 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-04-13 16:49:16.937  INFO 26644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8401 (http) with context path ''
+2023-04-13 16:49:16.957  INFO 26644 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 19.971 seconds (JVM running for 20.817)
+2023-04-13 16:49:16.964  INFO 26644 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-04-13 16:49:19.658  INFO 26644 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[9]
+2023-04-13 16:49:22.478  INFO 26644 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:49:29.469  INFO 26644 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:49:29.770  INFO 26644 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:49:31.456  INFO 26644 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08312101}
+2023-04-13 16:49:31.456 ERROR 26644 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-04-13 16:49:31.457 ERROR 26644 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:49:34.859  INFO 26644 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:56:51.443  INFO 11764 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.15.1 on LP-TECH-0VMQ with PID 11764 (C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug\target\classes started by lamech.ngeno in C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug)
+2023-04-13 16:56:51.447  INFO 11764 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2023-04-13 16:56:52.563  INFO 11764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 16:56:52.582  INFO 11764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-04-13 16:56:54.311  INFO 11764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8401 (http)
+2023-04-13 16:56:54.327  INFO 11764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 16:56:54.327  INFO 11764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-13 16:56:54.583  INFO 11764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-13 16:56:54.584  INFO 11764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3033 ms
+2023-04-13 16:56:55.051  INFO 11764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2023-04-13 16:56:55.134  INFO 11764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2023-04-13 16:56:55.340  INFO 11764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 16:56:55.586  INFO 11764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-13 16:56:57.319  INFO 11764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-13 16:56:57.373  INFO 11764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-04-13 16:57:01.636  INFO 11764 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 16:57:01.646  INFO 11764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2023-04-13 16:57:02.388  WARN 11764 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 16:57:02.458  INFO 11764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-13 16:57:02.748  INFO 11764 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-04-13 16:57:02.764  INFO 11764 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-04-13 16:57:02.835  INFO 11764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8401 (http) with context path ''
+2023-04-13 16:57:02.857  INFO 11764 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 12.194 seconds (JVM running for 13.125)
+2023-04-13 16:57:02.865  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-04-13 16:57:06.268  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[9]
+2023-04-13 16:57:07.924  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:15.749  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:16.142  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:57:18.120  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08312201}
+2023-04-13 16:57:18.120  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2023-04-13 16:57:22.739 ERROR 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:57:24.704  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:26.541  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:26.558  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:57:27.515  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08312301}
+2023-04-13 16:57:27.516  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2023-04-13 16:57:29.670 ERROR 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:57:30.864  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:33.267  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:33.289  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:57:34.154  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08312401}
+2023-04-13 16:57:34.156  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2023-04-13 16:57:35.533 ERROR 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:57:37.312  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:40.307  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:40.327  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:57:41.606  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08312501}
+2023-04-13 16:57:41.607  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2023-04-13 16:57:42.661 ERROR 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:57:45.010  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:47.403  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:47.424  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:57:48.378  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08312601}
+2023-04-13 16:57:48.379  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2023-04-13 16:57:50.372 ERROR 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:57:52.222  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:56.315  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:57:56.334  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:57:57.456  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08312701}
+2023-04-13 16:57:57.458  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2023-04-13 16:57:59.319 ERROR 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:58:01.135  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:58:02.894  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:58:02.911  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:58:03.810  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08312801}
+2023-04-13 16:58:03.811  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2023-04-13 16:58:05.127 ERROR 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:58:07.134  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:58:12.478  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:58:12.510  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:58:13.598  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08312901}
+2023-04-13 16:58:13.598  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2023-04-13 16:58:15.827 ERROR 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:58:18.283  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:58:22.346  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2023-04-13 16:58:22.365  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-04-13 16:58:23.353  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentUgandaResult=08313001}
+2023-04-13 16:58:23.353  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2023-04-13 16:58:25.202 ERROR 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-04-13 16:58:25.202  INFO 11764 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-04-13 17:07:02.870  INFO 11764 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-04-13 17:07:07.891  WARN 11764 --- [task-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@28f05b0c (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-04-13 17:07:12.908  WARN 11764 --- [task-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@67d8e349 (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-04-13 17:07:17.919  WARN 11764 --- [task-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@4f6dd8db (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-04-13 17:07:22.927  WARN 11764 --- [task-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@285cf482 (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-04-13 17:07:27.940  WARN 11764 --- [task-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@79e68935 (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-04-13 17:07:32.950  WARN 11764 --- [task-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@e073757 (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-04-13 17:07:32.953  WARN 11764 --- [task-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08006
+2023-04-13 17:07:32.954 ERROR 11764 --- [task-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 30077ms.
+2023-04-13 17:07:32.954  WARN 11764 --- [task-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 17002, SQLState: 08006
+2023-04-13 17:07:32.954 ERROR 11764 --- [task-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : IO Error: Invalid Operation, NOT Connected
+2023-04-13 17:07:32.959  INFO 11764 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-04-13 17:11:07.043  INFO 31268 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.15.1 on LP-TECH-0VMQ with PID 31268 (C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug\target\classes started by lamech.ngeno in C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug)
+2023-04-13 17:11:07.047  INFO 31268 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2023-04-13 17:11:08.407  INFO 31268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 17:11:08.428  INFO 31268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2023-04-13 17:11:10.522  INFO 31268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8401 (http)
+2023-04-13 17:11:10.533  INFO 31268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 17:11:10.534  INFO 31268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-04-13 17:11:10.857  INFO 31268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-13 17:11:10.858  INFO 31268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3710 ms
+2023-04-13 17:11:11.527  INFO 31268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2023-04-13 17:11:11.621  INFO 31268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2023-04-13 17:11:11.805  INFO 31268 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 17:11:12.173  INFO 31268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-13 17:11:13.513  INFO 31268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-13 17:11:13.577  INFO 31268 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-04-13 17:11:16.470  INFO 31268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 17:11:16.499  INFO 31268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2023-04-13 17:11:17.150  WARN 31268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-13 17:11:17.219  INFO 31268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-13 17:11:17.582  INFO 31268 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-04-13 17:11:17.605  INFO 31268 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-04-13 17:11:17.667  INFO 31268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8401 (http) with context path ''
+2023-04-13 17:11:17.694  INFO 31268 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 11.344 seconds (JVM running for 12.253)
+2023-04-13 17:11:17.699  INFO 31268 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-04-13 17:11:21.536  INFO 31268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-04-13 17:11:21.537  INFO 31268 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents

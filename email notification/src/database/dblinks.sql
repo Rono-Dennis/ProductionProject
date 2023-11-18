@@ -1,0 +1,27 @@
+--AKUH PARKLANDS 
+CREATE PUBLIC DATABASE LINK dblink_akuh_parklands 
+   CONNECT TO smart IDENTIFIED BY smart
+   USING '(DESCRIPTION=
+            (ADDRESS=(PROTOCOL=TCP)(HOST= 192.180.3.14)(PORT=1515))
+            (CONNECT_DATA=(SERVICE_NAME=carepro))
+          )';   
+
+
+
+CREATE PUBLIC DATABASE LINK dblink_akuh_mombasa 
+   CONNECT TO smart IDENTIFIED BY SMART54321!
+   USING '(DESCRIPTION=
+            (ADDRESS=(PROTOCOL=TCP)(HOST=192.180.3.14)(PORT=7003))
+            (CONNECT_DATA=(SERVICE_NAME=caremsa))
+          )';   
+
+
+
+CREATE PUBLIC DATABASE LINK dblink_akuh_kisumu 
+   CONNECT TO smart IDENTIFIED BY smart
+   USING '(DESCRIPTION=
+            (ADDRESS=(PROTOCOL=TCP)(HOST= 192.180.3.14)(PORT=7002))
+            (CONNECT_DATA=(SERVICE_NAME=careksm))
+          )';   
+
+

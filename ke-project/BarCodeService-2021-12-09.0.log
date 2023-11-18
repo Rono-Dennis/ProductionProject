@@ -1,0 +1,753 @@
+2021-11-19 09:22:40.175  INFO 19700 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 19700 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2021-11-19 09:22:40.184  INFO 19700 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2021-11-19 09:22:41.238  INFO 19700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-19 09:22:41.266  INFO 19700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2021-11-19 09:22:42.883  INFO 19700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2021-11-19 09:22:42.897  INFO 19700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-19 09:22:42.897  INFO 19700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-11-19 09:22:43.171  INFO 19700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-19 09:22:43.171  INFO 19700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2900 ms
+2021-11-19 09:22:43.599  INFO 19700 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-11-19 09:22:43.670  INFO 19700 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-11-19 09:22:43.883  INFO 19700 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-19 09:22:44.178  INFO 19700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-19 09:22:45.576  INFO 19700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-19 09:22:45.622  INFO 19700 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-11-19 09:22:48.166  INFO 19700 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-19 09:22:48.175  INFO 19700 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-11-19 09:22:48.835  WARN 19700 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-19 09:22:48.920  INFO 19700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-19 09:22:49.320  INFO 19700 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-11-19 09:22:49.346  INFO 19700 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-11-19 09:22:49.427  INFO 19700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2021-11-19 09:22:49.455  INFO 19700 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 9.945 seconds (JVM running for 11.017)
+2021-11-19 09:22:49.464  INFO 19700 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-11-19 09:22:49.879  INFO 19700 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-11-19 09:22:49.881  INFO 19700 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-19 09:22:49.889  WARN 19700 --- [task-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@1201e064 marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:900) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1158) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1093) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1402) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1285) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1687) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:394) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:452) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.fetchClaims(ClaimsRepo.java:81) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$8b1a5071.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:135) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:549) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:420) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1119) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:267) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:199) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:141) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:114) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:98) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:834) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:487) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:577) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:108) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:887) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	... 39 common frames omitted
+
+2021-11-19 09:22:49.910  INFO 19700 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2021-11-19 09:22:49.912  INFO 19700 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-19 09:22:50.029  WARN 19700 --- [task-1] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.setDataSource(SQLErrorCodeSQLExceptionTranslator.java:141) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.<init>(SQLErrorCodeSQLExceptionTranslator.java:102) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcAccessor.getExceptionTranslator(JdbcAccessor.java:136) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.fetchClaims(ClaimsRepo.java:81) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$8b1a5071.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:135) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 37 common frames omitted
+
+2021-11-19 09:22:50.030  WARN 19700 --- [task-1] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SupplierUtils.resolve(SupplierUtils.java:40) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.getSqlErrorCodes(SQLErrorCodeSQLExceptionTranslator.java:171) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:193) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.fetchClaims(ClaimsRepo.java:81) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$8b1a5071.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:135) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 38 common frames omitted
+
+2021-11-19 09:22:50.033 ERROR 19700 --- [task-1] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.orderedStream(DefaultListableBeanFactory.java:481) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:167) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:149) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$8b1a5071.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:135) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-11-19 09:22:50.036  INFO 19700 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-11-19 09:22:50.036  INFO 19700 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-11-19 09:22:50.037  INFO 19700 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-11-19 09:22:50.468  INFO 19700 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-19 09:22:58.260  INFO 26144 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 26144 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2021-11-19 09:22:58.265  INFO 26144 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2021-11-19 09:22:59.397  INFO 26144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-19 09:22:59.423  INFO 26144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2021-11-19 09:23:01.011  INFO 26144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2021-11-19 09:23:01.028  INFO 26144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-19 09:23:01.028  INFO 26144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-11-19 09:23:01.330  INFO 26144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-19 09:23:01.331  INFO 26144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2958 ms
+2021-11-19 09:23:01.810  INFO 26144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-11-19 09:23:01.897  INFO 26144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-11-19 09:23:02.128  INFO 26144 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-19 09:23:02.405  INFO 26144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-19 09:23:03.285  INFO 26144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-19 09:23:03.322  INFO 26144 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-11-19 09:23:05.422  INFO 26144 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-19 09:23:05.433  INFO 26144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-11-19 09:23:06.140  WARN 26144 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-19 09:23:06.215  INFO 26144 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-19 09:23:06.573  INFO 26144 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-11-19 09:23:06.594  INFO 26144 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-11-19 09:23:06.667  INFO 26144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2021-11-19 09:23:06.695  INFO 26144 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 9.145 seconds (JVM running for 10.685)
+2021-11-19 09:23:06.701  INFO 26144 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-11-19 10:01:21.705  WARN 26144 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m18s328ms448µs600ns).
+2021-11-19 10:01:21.707  INFO 26144 --- [task-3] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-11-19 10:01:21.707  INFO 26144 --- [task-4] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-11-19 10:01:21.708  INFO 26144 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-11-19 10:01:21.936  INFO 26144 --- [task-3] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-11-19 10:01:21.937  INFO 26144 --- [task-3] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-11-19 10:01:21.937  INFO 26144 --- [task-3] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-11-19 10:01:21.937  INFO 26144 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-11-19 10:01:21.937  INFO 26144 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-11-19 10:01:21.937  INFO 26144 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-11-19 10:01:22.072  INFO 26144 --- [task-4] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-11-19 10:01:22.072  INFO 26144 --- [task-4] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-11-19 10:01:22.072  INFO 26144 --- [task-4] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-11-19 10:01:22.091  INFO 26144 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-11-19 10:01:22.093  INFO 26144 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-19 10:01:22.095  WARN 26144 --- [task-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-11-19 10:01:22.095  WARN 26144 --- [task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-11-19 10:01:22.095  WARN 26144 --- [task-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-11-19 10:01:22.096 ERROR 26144 --- [task-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-11-19 10:01:22.096 ERROR 26144 --- [task-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-11-19 10:01:22.096 ERROR 26144 --- [task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-11-19 10:01:22.100  INFO 26144 --- [task-4] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-11-19 10:01:22.102  WARN 26144 --- [task-2] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@48f16bf0 marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:900) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1158) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1093) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1402) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1285) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1687) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:394) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:452) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.fetchClaims(ClaimsRepo.java:81) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$88776744.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:135) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:549) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:420) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1119) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:267) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:199) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:141) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:114) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:98) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:834) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:487) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:577) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:108) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:887) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	... 40 common frames omitted
+
+2021-11-19 10:01:22.103  INFO 26144 --- [task-3] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-11-19 10:01:22.105  INFO 26144 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-11-19 10:01:22.120  INFO 26144 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2021-11-19 10:01:22.123  INFO 26144 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-19 10:01:22.249  WARN 26144 --- [task-2] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.setDataSource(SQLErrorCodeSQLExceptionTranslator.java:141) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.<init>(SQLErrorCodeSQLExceptionTranslator.java:102) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcAccessor.getExceptionTranslator(JdbcAccessor.java:136) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.fetchClaims(ClaimsRepo.java:81) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$88776744.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:135) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 38 common frames omitted
+
+2021-11-19 10:01:22.253  WARN 26144 --- [task-2] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SupplierUtils.resolve(SupplierUtils.java:40) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.getSqlErrorCodes(SQLErrorCodeSQLExceptionTranslator.java:171) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:193) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.fetchClaims(ClaimsRepo.java:81) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$88776744.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:135) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 39 common frames omitted
+
+2021-11-19 10:01:22.263 ERROR 26144 --- [task-2] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.orderedStream(DefaultListableBeanFactory.java:481) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:167) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:149) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$88776744.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:135) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-11-19 10:01:22.265  INFO 26144 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-11-19 10:01:22.266  INFO 26144 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-11-19 10:01:22.268  INFO 26144 --- [task-2] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-11-19 10:01:22.407  INFO 26144 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-09 08:52:01.912  INFO 20272 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 20272 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2021-12-09 08:52:01.917  INFO 20272 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2021-12-09 08:52:03.448  INFO 20272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-09 08:52:03.481  INFO 20272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2021-12-09 08:52:06.120  INFO 20272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8790 (http)
+2021-12-09 08:52:06.143  INFO 20272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-09 08:52:06.144  INFO 20272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-09 08:52:06.556  INFO 20272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-09 08:52:06.557  INFO 20272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4535 ms
+2021-12-09 08:52:07.187  INFO 20272 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-12-09 08:52:07.296  INFO 20272 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-09 08:52:07.574  INFO 20272 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-09 08:52:07.918  INFO 20272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-09 08:52:09.697  INFO 20272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-09 08:52:09.746  INFO 20272 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-12-09 08:52:15.498  INFO 20272 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-09 08:52:15.510  INFO 20272 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-12-09 08:52:16.760  WARN 20272 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-09 08:52:16.851  INFO 20272 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-09 08:52:17.273  INFO 20272 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-09 08:52:17.309  INFO 20272 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-12-09 08:52:17.401  INFO 20272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8790 (http) with context path ''
+2021-12-09 08:52:17.433  INFO 20272 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 16.398 seconds (JVM running for 17.815)
+2021-12-09 08:52:17.445  INFO 20272 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-12-09 08:52:17.986  INFO 20272 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-12-09 08:52:17.987  INFO 20272 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-12-09 08:52:17.988  INFO 20272 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-12-09 08:52:18.273  INFO 20272 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-12-09 08:52:18.273  INFO 20272 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-12-09 08:56:18.446  INFO 20272 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-09 08:56:18.448  INFO 20272 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-09 08:56:18.468  INFO 20272 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2021-12-09 08:56:18.470  INFO 20272 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-09 08:56:19.169  INFO 20272 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-09 08:56:24.967  INFO 39012 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 39012 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2021-12-09 08:56:24.971  INFO 39012 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2021-12-09 08:56:26.084  INFO 39012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-09 08:56:26.107  INFO 39012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2021-12-09 08:56:28.031  INFO 39012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8790 (http)
+2021-12-09 08:56:28.047  INFO 39012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-09 08:56:28.048  INFO 39012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-09 08:56:28.447  INFO 39012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-09 08:56:28.448  INFO 39012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3379 ms
+2021-12-09 08:56:29.021  INFO 39012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-12-09 08:56:29.124  INFO 39012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-09 08:56:29.402  INFO 39012 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-09 08:56:29.717  INFO 39012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-09 08:56:31.128  INFO 39012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-09 08:56:31.188  INFO 39012 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-12-09 08:56:35.617  INFO 39012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-09 08:56:35.628  INFO 39012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-12-09 08:56:36.512  WARN 39012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-09 08:56:36.604  INFO 39012 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-09 08:56:37.057  INFO 39012 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-09 08:56:37.084  INFO 39012 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-12-09 08:56:37.174  INFO 39012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8790 (http) with context path ''
+2021-12-09 08:56:37.203  INFO 39012 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 13.04 seconds (JVM running for 14.396)
+2021-12-09 08:56:37.210  INFO 39012 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-12-09 08:56:37.706  INFO 39012 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-12-09 08:56:37.706  INFO 39012 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-12-09 08:56:37.706  INFO 39012 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-12-09 08:56:37.944  INFO 39012 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-12-09 08:56:37.944  INFO 39012 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-12-09 08:59:01.043  INFO 39012 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-09 08:59:01.044  INFO 39012 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-09 08:59:01.066  INFO 39012 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2021-12-09 08:59:01.068  INFO 39012 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-09 08:59:01.848  INFO 39012 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-09 08:59:09.944  INFO 34892 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 34892 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2021-12-09 08:59:09.948  INFO 34892 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2021-12-09 08:59:11.088  INFO 34892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-09 08:59:11.109  INFO 34892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2021-12-09 08:59:13.106  INFO 34892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8790 (http)
+2021-12-09 08:59:13.118  INFO 34892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-09 08:59:13.119  INFO 34892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-09 08:59:13.427  INFO 34892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-09 08:59:13.428  INFO 34892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3370 ms
+2021-12-09 08:59:13.936  INFO 34892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-12-09 08:59:14.025  INFO 34892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-09 08:59:14.277  INFO 34892 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-09 08:59:14.583  INFO 34892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-09 08:59:15.861  INFO 34892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-09 08:59:15.894  INFO 34892 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-12-09 08:59:22.072  INFO 34892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-09 08:59:22.083  INFO 34892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-12-09 08:59:22.919  WARN 34892 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-09 08:59:23.009  INFO 34892 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-09 08:59:23.437  INFO 34892 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-09 08:59:23.465  INFO 34892 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-12-09 08:59:23.543  INFO 34892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8790 (http) with context path ''
+2021-12-09 08:59:23.570  INFO 34892 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 14.41 seconds (JVM running for 15.699)
+2021-12-09 08:59:23.578  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-12-09 08:59:24.058  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[1]
+2021-12-09 08:59:24.427  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2021-12-09 08:59:30.058  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2021-12-09 08:59:30.429  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-12-09 08:59:47.423  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentResult=ERROR:A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)}
+2021-12-09 08:59:47.423  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-12-09 08:59:47.423 ERROR 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1639029564059-25-KE0002378802.pdf failed to save in sharepoint with the following error ERROR:A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2021-12-09 08:59:47.424 ERROR 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2021-12-09 08:59:47.424  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-12-09 08:59:47.424  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-12-09 08:59:47.702  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-12-09 08:59:47.703  INFO 34892 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-12-09 09:05:43.124  INFO 34892 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-09 09:05:43.126  INFO 34892 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-09 09:05:43.141  INFO 34892 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2021-12-09 09:05:43.143  INFO 34892 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-09 09:05:43.390  INFO 34892 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-09 14:31:08.551  INFO 38332 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 38332 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2021-12-09 14:31:08.556  INFO 38332 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2021-12-09 14:31:10.760  INFO 38332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-09 14:31:10.804  INFO 38332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2021-12-09 14:31:14.284  INFO 38332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8790 (http)
+2021-12-09 14:31:14.300  INFO 38332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-09 14:31:14.301  INFO 38332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-09 14:31:14.632  INFO 38332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-09 14:31:14.632  INFO 38332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5933 ms
+2021-12-09 14:31:15.224  INFO 38332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-12-09 14:31:15.349  INFO 38332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-09 14:31:15.623  INFO 38332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-09 14:31:15.959  INFO 38332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-09 14:31:16.958  INFO 38332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-09 14:31:17.038  INFO 38332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-12-09 14:31:19.090  INFO 38332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-09 14:31:19.109  INFO 38332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-12-09 14:31:20.087  WARN 38332 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-09 14:31:20.206  INFO 38332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-09 14:31:20.693  INFO 38332 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-09 14:31:20.718  INFO 38332 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-12-09 14:31:20.820  INFO 38332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8790 (http) with context path ''
+2021-12-09 14:31:20.858  INFO 38332 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 13.466 seconds (JVM running for 14.939)
+2021-12-09 14:31:20.868  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-12-09 14:31:21.351  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[1]
+2021-12-09 14:31:21.501  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2021-12-09 14:31:25.858  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2021-12-09 14:31:26.279  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-12-09 14:31:43.154  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentResult=file upload error - Invalid choice value.
+
+A choice field contains invalid data. Please check the value and try again.}
+2021-12-09 14:31:43.154  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-12-09 14:31:43.155 ERROR 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1639049481351-25-KE0002378802.pdf failed to save in sharepoint with the following error file upload error - Invalid choice value.
+
+A choice field contains invalid data. Please check the value and try again.
+2021-12-09 14:31:43.156 ERROR 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2021-12-09 14:31:43.157  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-12-09 14:31:43.157  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-12-09 14:31:44.419  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-12-09 14:31:44.419  INFO 38332 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-12-09 14:32:16.318  INFO 38332 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-09 14:32:16.320  INFO 38332 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-09 14:32:16.342  INFO 38332 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2021-12-09 14:32:16.343  INFO 38332 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-09 14:32:16.622  INFO 38332 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-09 14:32:23.419  INFO 26316 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 26316 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2021-12-09 14:32:23.426  INFO 26316 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2021-12-09 14:32:24.951  INFO 26316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-09 14:32:24.992  INFO 26316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2021-12-09 14:32:28.435  INFO 26316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8790 (http)
+2021-12-09 14:32:28.454  INFO 26316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-09 14:32:28.456  INFO 26316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-09 14:32:29.305  INFO 26316 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-09 14:32:29.327  INFO 26316 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5766 ms
+2021-12-09 14:32:35.055  INFO 26316 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-12-09 14:32:35.309  INFO 26316 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-09 14:32:35.658  INFO 26316 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-09 14:32:36.788  INFO 26316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-09 14:32:38.939  INFO 26316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-09 14:32:38.993  INFO 26316 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-12-09 14:32:43.842  INFO 26316 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-09 14:32:43.855  INFO 26316 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-12-09 14:32:44.783  WARN 26316 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-09 14:32:44.884  INFO 26316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-09 14:32:45.383  INFO 26316 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-09 14:32:45.412  INFO 26316 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-12-09 14:32:45.514  INFO 26316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8790 (http) with context path ''
+2021-12-09 14:32:45.550  INFO 26316 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 24.249 seconds (JVM running for 27.407)
+2021-12-09 14:32:45.560  INFO 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-12-09 14:33:05.121  INFO 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[1]
+2021-12-09 14:33:54.763  INFO 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2021-12-09 14:34:30.945  WARN 26316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s721ms272µs600ns).
+2021-12-09 14:35:49.065  WARN 26316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s699ms279µs300ns).
+2021-12-09 14:37:34.065  INFO 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2021-12-09 14:39:06.007  WARN 26316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s126ms451µs600ns).
+2021-12-09 14:39:06.006  INFO 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-12-09 14:40:48.714  INFO 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentResult=file upload error - Invalid choice value.
+
+A choice field contains invalid data. Please check the value and try again.}
+2021-12-09 14:41:03.060  INFO 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-12-09 14:41:09.109 ERROR 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1639049594743-25-KE0002378802.pdf failed to save in sharepoint with the following error file upload error - Invalid choice value.
+
+A choice field contains invalid data. Please check the value and try again.
+2021-12-09 14:41:11.554 ERROR 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2021-12-09 14:41:17.687  INFO 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-12-09 14:41:18.786  INFO 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-12-09 15:24:01.230  WARN 26316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m47s193ms237µs400ns).
+2021-12-09 15:24:01.238  INFO 26316 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-12-09 15:24:01.240  INFO 26316 --- [task-5] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-12-09 15:24:01.241  INFO 26316 --- [task-4] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-12-09 15:24:01.241  INFO 26316 --- [task-3] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-12-09 15:24:01.242  INFO 26316 --- [task-6] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-12-09 15:24:01.590  INFO 26316 --- [task-3] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[1]
+2021-12-09 15:24:01.612  INFO 26316 --- [task-5] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[1]
+2021-12-09 15:24:01.734  INFO 26316 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-09 15:24:01.738  INFO 26316 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-09 15:24:01.750  WARN 26316 --- [task-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-12-09 15:24:01.751  WARN 26316 --- [task-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-12-09 15:24:01.750  WARN 26316 --- [task-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-12-09 15:24:01.751 ERROR 26316 --- [task-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-12-09 15:24:01.750  WARN 26316 --- [task-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-12-09 15:24:01.751 ERROR 26316 --- [task-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-12-09 15:24:01.752 ERROR 26316 --- [task-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-12-09 15:24:01.752  WARN 26316 --- [task-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-12-09 15:24:01.753 ERROR 26316 --- [task-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-12-09 15:24:01.754 ERROR 26316 --- [task-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-12-09 15:24:01.769  INFO 26316 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-12-09 15:24:01.770  INFO 26316 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-12-09 15:24:01.771  WARN 26316 --- [task-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-12-09 15:24:01.772 ERROR 26316 --- [task-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-12-09 15:24:01.775  INFO 26316 --- [task-2] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-12-09 15:24:01.793  INFO 26316 --- [task-4] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-12-09 15:24:01.793  INFO 26316 --- [task-4] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-12-09 15:24:01.798  WARN 26316 --- [task-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-12-09 15:24:01.806 ERROR 26316 --- [task-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-12-09 15:24:01.810  INFO 26316 --- [task-6] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-12-09 15:24:01.811  INFO 26316 --- [task-6] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-12-09 15:24:01.816  INFO 26316 --- [task-3] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-12-09 15:24:01.817  INFO 26316 --- [task-3] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-12-09 15:24:01.817  WARN 26316 --- [task-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-12-09 15:24:01.818 ERROR 26316 --- [task-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-12-09 15:24:01.814  WARN 26316 --- [task-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-12-09 15:24:01.820 ERROR 26316 --- [task-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-12-09 15:24:01.827  INFO 26316 --- [task-3] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-12-09 15:24:01.833  INFO 26316 --- [task-5] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-12-09 15:24:01.834  INFO 26316 --- [task-5] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-12-09 15:24:01.834  WARN 26316 --- [task-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: null
+2021-12-09 15:24:01.835 ERROR 26316 --- [task-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Interrupted during connection acquisition
+2021-12-09 15:24:01.835  INFO 26316 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2021-12-09 15:24:01.838  INFO 26316 --- [task-5] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-12-09 15:24:01.815  WARN 26316 --- [task-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@23469199 marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CConnection.doCommit(T4CConnection.java:1571) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.commit(PhysicalConnection.java:2667) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.commit(PhysicalConnection.java:2708) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyConnection.commit(ProxyConnection.java:387) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.commit(HikariProxyConnection.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:86) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:282) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:637) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:390) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$94e2b15b.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:135) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:38) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:549) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:420) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1119) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:267) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:199) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:141) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:114) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:98) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:834) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:487) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:577) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOCOMMIT(T4C7Ocommoncall.java:94) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.doCommit(T4CConnection.java:1565) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	... 30 common frames omitted
+
+2021-12-09 15:24:01.844  INFO 26316 --- [task-6] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-12-09 15:24:01.848  INFO 26316 --- [task-4] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-12-09 15:24:01.855  INFO 26316 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-09 15:24:02.009  INFO 26316 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-12-09 15:24:02.395  INFO 26316 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

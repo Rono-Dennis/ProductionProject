@@ -1,0 +1,13 @@
+#directories
+/.git
+/.mvn
+/docs
+/target
+/drivers
+/generated
+/uploads
+
+#files
+*.log
+*.gz
+gradle*

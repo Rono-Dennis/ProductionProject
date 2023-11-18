@@ -1,0 +1,1047 @@
+2023-11-18 10:18:55.921  INFO 12372 --- [main] c.s.d.DocsIntegrationApplicationTests    : Starting DocsIntegrationApplicationTests using Java 19.0.1 on LP-TECH-8LFF with PID 12372 (started by Dennis.Rono in C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration)
+2023-11-18 10:18:55.927  INFO 12372 --- [main] c.s.d.DocsIntegrationApplicationTests    : The following profiles are active: default
+2023-11-18 10:18:57.574  INFO 12372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-18 10:18:57.606  INFO 12372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2023-11-18 10:19:00.552  INFO 12372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2023-11-18 10:19:00.763  INFO 12372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2023-11-18 10:19:01.141  INFO 12372 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-18 10:19:01.699  INFO 12372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-18 10:19:03.363  INFO 12372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-18 10:19:03.476  INFO 12372 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-11-18 10:19:13.909  INFO 12372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-18 10:19:13.930  INFO 12372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2023-11-18 10:19:16.034  WARN 12372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-18 10:19:16.332  INFO 12372 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-18 10:19:17.359  INFO 12372 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-11-18 10:19:17.432  INFO 12372 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-18 10:19:17.579  INFO 12372 --- [main] c.s.d.DocsIntegrationApplicationTests    : Started DocsIntegrationApplicationTests in 22.594 seconds (JVM running for 25.473)
+2023-11-18 10:19:17.592  INFO 12372 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2023-11-18 10:19:17.593  INFO 12372 --- [task-2] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2023-11-18 10:19:17.593  INFO 12372 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-11-18 10:19:18.134  INFO 12372 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-11-18 10:19:18.135  INFO 12372 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-11-18 10:19:18.135  INFO 12372 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2023-11-18 10:19:18.240  INFO 12372 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-11-18 10:19:18.241  INFO 12372 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2023-11-18 10:19:18.268  INFO 12372 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-11-18 10:19:18.270  INFO 12372 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-18 10:19:18.283  WARN 12372 --- [task-2] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@1d4293b0 marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:900) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1158) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1093) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1402) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1285) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1687) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:394) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:452) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$a55cdca7.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:549) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:420) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1119) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:267) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:199) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:141) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:114) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:98) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:834) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:487) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:577) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:108) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:887) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	... 39 common frames omitted
+
+2023-11-18 10:19:18.314  INFO 12372 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2023-11-18 10:19:18.320  INFO 12372 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-18 10:19:18.520  WARN 12372 --- [task-2] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.setDataSource(SQLErrorCodeSQLExceptionTranslator.java:141) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.<init>(SQLErrorCodeSQLExceptionTranslator.java:102) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcAccessor.getExceptionTranslator(JdbcAccessor.java:136) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$a55cdca7.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 37 common frames omitted
+
+2023-11-18 10:19:18.523  WARN 12372 --- [task-2] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SupplierUtils.resolve(SupplierUtils.java:40) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.getSqlErrorCodes(SQLErrorCodeSQLExceptionTranslator.java:171) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:193) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$a55cdca7.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 38 common frames omitted
+
+2023-11-18 10:19:18.532 ERROR 12372 --- [task-2] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.orderedStream(DefaultListableBeanFactory.java:481) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:167) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:149) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$a55cdca7.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-11-18 10:19:18.535 ERROR 12372 --- [task-2] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void c.s.docs.daemon.ClaimsDaemon.processSpAttachments()
+
+org.springframework.transaction.TransactionSystemException: Could not roll back JPA transaction; nested exception is org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:593) ~[spring-orm-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:835) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:809) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:655) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:375) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$a55cdca7.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:127) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:304) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:142) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:589) ~[spring-orm-5.3.1.jar:5.3.1]
+	... 21 common frames omitted
+Caused by: java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515) ~[HikariCP-3.4.5.jar:na]
+	at jdk.proxy3/jdk.proxy3.$Proxy92.rollback(Unknown Source) ~[na:na]
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:396) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:121) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	... 24 common frames omitted
+
+2023-11-18 10:19:18.671  INFO 12372 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-18 10:23:46.922  INFO 24924 --- [main] c.s.d.DocsIntegrationApplicationTests    : Starting DocsIntegrationApplicationTests using Java 19.0.1 on LP-TECH-8LFF with PID 24924 (started by Dennis.Rono in C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration)
+2023-11-18 10:23:46.931  INFO 24924 --- [main] c.s.d.DocsIntegrationApplicationTests    : No active profile set, falling back to default profiles: default
+2023-11-18 10:23:48.970  INFO 24924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-18 10:23:49.011  INFO 24924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+2023-11-18 10:23:51.373  INFO 24924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2023-11-18 10:23:51.564  INFO 24924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2023-11-18 10:23:51.941  INFO 24924 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-18 10:23:52.502  INFO 24924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-18 10:23:53.858  INFO 24924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-18 10:23:54.029  INFO 24924 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-11-18 10:23:59.418  INFO 24924 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-18 10:23:59.441  INFO 24924 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2023-11-18 10:24:01.588  WARN 24924 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-18 10:24:01.853  INFO 24924 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-18 10:24:02.932  INFO 24924 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-11-18 10:24:03.024  INFO 24924 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-18 10:24:03.197  INFO 24924 --- [main] c.s.d.DocsIntegrationApplicationTests    : Started DocsIntegrationApplicationTests in 16.995 seconds (JVM running for 19.912)
+2023-11-18 10:24:03.217  INFO 24924 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-11-18 10:24:03.221  INFO 24924 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2023-11-18 10:24:03.221  INFO 24924 --- [task-1] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2023-11-18 10:24:03.795  INFO 24924 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-11-18 10:24:03.797  INFO 24924 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-18 10:24:03.809  WARN 24924 --- [task-2] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@97b00ae marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CConnection.doCommit(T4CConnection.java:1571) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.commit(PhysicalConnection.java:2667) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.commit(PhysicalConnection.java:2708) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyConnection.commit(ProxyConnection.java:387) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.commit(HikariProxyConnection.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:86) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:282) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:637) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:390) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$400d55d0.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:102) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:549) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:420) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1119) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:267) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:199) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:141) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:114) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:98) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:834) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:487) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:577) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOCOMMIT(T4C7Ocommoncall.java:94) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.doCommit(T4CConnection.java:1565) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	... 29 common frames omitted
+
+2023-11-18 10:24:03.809  WARN 24924 --- [task-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@49038f97 marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:900) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1158) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1093) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1402) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1285) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1687) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:394) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:452) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$400d55d0.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:549) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:420) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1119) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:267) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:199) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:141) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:114) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:98) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:834) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:487) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:577) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:108) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:887) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	... 39 common frames omitted
+
+2023-11-18 10:24:03.830  INFO 24924 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-11-18 10:24:03.831  INFO 24924 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2023-11-18 10:24:03.838  INFO 24924 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2023-11-18 10:24:03.840  INFO 24924 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-18 10:24:03.944  INFO 24924 --- [task-2] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2023-11-18 10:24:03.985  WARN 24924 --- [task-1] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.setDataSource(SQLErrorCodeSQLExceptionTranslator.java:141) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.<init>(SQLErrorCodeSQLExceptionTranslator.java:102) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcAccessor.getExceptionTranslator(JdbcAccessor.java:136) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$400d55d0.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 37 common frames omitted
+
+2023-11-18 10:24:03.989  WARN 24924 --- [task-1] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SupplierUtils.resolve(SupplierUtils.java:40) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.getSqlErrorCodes(SQLErrorCodeSQLExceptionTranslator.java:171) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:193) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$400d55d0.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 38 common frames omitted
+
+2023-11-18 10:24:03.995 ERROR 24924 --- [task-1] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.orderedStream(DefaultListableBeanFactory.java:481) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:167) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:149) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$400d55d0.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-11-18 10:24:04.000 ERROR 24924 --- [task-1] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void c.s.docs.daemon.ClaimsDaemon.processSpAttachments()
+
+org.springframework.transaction.TransactionSystemException: Could not roll back JPA transaction; nested exception is org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:593) ~[spring-orm-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:835) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:809) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:655) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:375) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$400d55d0.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:127) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:304) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:142) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:589) ~[spring-orm-5.3.1.jar:5.3.1]
+	... 21 common frames omitted
+Caused by: java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515) ~[HikariCP-3.4.5.jar:na]
+	at jdk.proxy3/jdk.proxy3.$Proxy92.rollback(Unknown Source) ~[na:na]
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:396) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:121) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	... 24 common frames omitted
+
+2023-11-18 10:24:04.146  INFO 24924 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-18 10:46:02.960  INFO 8868 --- [main] c.s.d.DocsIntegrationApplicationTests    : Starting DocsIntegrationApplicationTests using Java 19.0.1 on LP-TECH-8LFF with PID 8868 (started by Dennis.Rono in C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration)
+2023-11-18 10:46:02.968  INFO 8868 --- [main] c.s.d.DocsIntegrationApplicationTests    : No active profile set, falling back to default profiles: default
+2023-11-18 10:46:04.137  INFO 8868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-18 10:46:04.173  INFO 8868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2023-11-18 10:46:05.918  INFO 8868 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2023-11-18 10:46:06.057  INFO 8868 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2023-11-18 10:46:06.387  INFO 8868 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-18 10:46:06.725  INFO 8868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-18 10:46:08.157  INFO 8868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-18 10:46:08.206  INFO 8868 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-11-18 10:46:26.491  INFO 8868 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-18 10:46:26.507  INFO 8868 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2023-11-18 10:46:28.014  WARN 8868 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-18 10:46:28.161  INFO 8868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-18 10:46:28.881  INFO 8868 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-11-18 10:46:28.934  INFO 8868 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-18 10:46:29.024  INFO 8868 --- [main] c.s.d.DocsIntegrationApplicationTests    : Started DocsIntegrationApplicationTests in 26.559 seconds (JVM running for 28.395)
+2023-11-18 10:46:29.032  INFO 8868 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-11-18 10:46:29.032  INFO 8868 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2023-11-18 10:46:29.034  INFO 8868 --- [task-1] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2023-11-18 10:46:29.498  INFO 8868 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-11-18 10:46:29.500  INFO 8868 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-18 10:46:29.514  WARN 8868 --- [task-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@cfd5cd2 marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:900) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1158) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1093) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1402) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1285) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1687) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:394) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:452) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$4c7c65dd.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:549) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:420) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1119) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:267) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:199) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:141) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:114) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:98) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:834) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:487) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:577) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:108) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:887) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	... 39 common frames omitted
+
+2023-11-18 10:46:29.518  WARN 8868 --- [task-2] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@178e4298 marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:900) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1158) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1093) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1402) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1285) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1687) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:394) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:452) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.fetchClaims(ClaimsRepo.java:81) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$4c7c65dd.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:102) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:549) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:420) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1119) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:267) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:199) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:141) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:114) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:98) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:834) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:487) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:577) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:108) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:887) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	... 39 common frames omitted
+
+2023-11-18 10:46:29.558  INFO 8868 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2023-11-18 10:46:29.560  INFO 8868 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-18 10:46:29.647  WARN 8868 --- [task-1] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.setDataSource(SQLErrorCodeSQLExceptionTranslator.java:141) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.<init>(SQLErrorCodeSQLExceptionTranslator.java:102) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcAccessor.getExceptionTranslator(JdbcAccessor.java:136) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$4c7c65dd.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 37 common frames omitted
+
+2023-11-18 10:46:29.652  WARN 8868 --- [task-2] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SupplierUtils.resolve(SupplierUtils.java:40) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.getSqlErrorCodes(SQLErrorCodeSQLExceptionTranslator.java:171) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:193) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.fetchClaims(ClaimsRepo.java:81) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$4c7c65dd.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:102) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 38 common frames omitted
+
+2023-11-18 10:46:29.654  WARN 8868 --- [task-1] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SupplierUtils.resolve(SupplierUtils.java:40) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.getSqlErrorCodes(SQLErrorCodeSQLExceptionTranslator.java:171) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:193) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$4c7c65dd.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 38 common frames omitted
+
+2023-11-18 10:46:29.659 ERROR 8868 --- [task-1] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.orderedStream(DefaultListableBeanFactory.java:481) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:167) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:149) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$4c7c65dd.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-11-18 10:46:29.659 ERROR 8868 --- [task-2] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.orderedStream(DefaultListableBeanFactory.java:481) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:167) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:149) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$4c7c65dd.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:102) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-11-18 10:46:29.661 ERROR 8868 --- [task-1] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void c.s.docs.daemon.ClaimsDaemon.processSpAttachments()
+
+org.springframework.transaction.TransactionSystemException: Could not roll back JPA transaction; nested exception is org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:593) ~[spring-orm-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:835) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:809) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:655) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:375) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$4c7c65dd.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:127) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:304) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:142) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:589) ~[spring-orm-5.3.1.jar:5.3.1]
+	... 21 common frames omitted
+Caused by: java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515) ~[HikariCP-3.4.5.jar:na]
+	at jdk.proxy3/jdk.proxy3.$Proxy92.rollback(Unknown Source) ~[na:na]
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:396) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:121) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	... 24 common frames omitted
+
+2023-11-18 10:46:29.678  INFO 8868 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-11-18 10:46:29.678  INFO 8868 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2023-11-18 10:46:29.684  INFO 8868 --- [task-2] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2023-11-18 10:46:29.897  INFO 8868 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-18 11:31:14.019  INFO 26496 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 17.0.5 on LP-TECH-8LFF with PID 26496 (C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration\target\classes started by Dennis.Rono in C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration)
+2023-11-18 11:31:14.025  INFO 26496 --- [main] c.s.docs.DocsIntegrationApplication      : No active profile set, falling back to default profiles: default
+2023-11-18 11:31:14.285  WARN 26496 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration\target\classes\c\s\docs\DocsIntegrationApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration\target\classes\c\s\docs\DocsIntegrationApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+2023-11-18 11:31:14.380 ERROR 26496 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration\target\classes\c\s\docs\DocsIntegrationApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration\target\classes\c\s\docs\DocsIntegrationApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:336) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) ~[spring-boot-2.4.0.jar:2.4.0]
+	at c.s.docs.DocsIntegrationApplication.main(DocsIntegrationApplication.java:27) ~[classes/:na]
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration\target\classes\c\s\docs\DocsIntegrationApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:60) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:429) ~[spring-context-5.3.1.jar:5.3.1]
+	... 21 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:189) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:170) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:156) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:277) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:57) ~[spring-core-5.3.1.jar:5.3.1]
+	... 25 common frames omitted
+
+2023-11-18 11:39:20.538  INFO 3332 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.17 on LP-TECH-8LFF with PID 3332 (C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration\target\classes started by Dennis.Rono in C:\Users\dennis.rono\IdeaProjects\smart_projects\Doc Integration\edi-doc-integration)
+2023-11-18 11:39:20.540  INFO 3332 --- [main] c.s.docs.DocsIntegrationApplication      : No active profile set, falling back to default profiles: default
+2023-11-18 11:39:21.309  INFO 3332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-18 11:39:21.326  INFO 3332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2023-11-18 11:39:22.177  INFO 3332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2023-11-18 11:39:22.189  INFO 3332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18 11:39:22.189  INFO 3332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-11-18 11:39:22.440  INFO 3332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18 11:39:22.440  INFO 3332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1835 ms
+2023-11-18 11:39:22.747  INFO 3332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2023-11-18 11:39:22.818  INFO 3332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2023-11-18 11:39:23.005  INFO 3332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-18 11:39:23.200  INFO 3332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-18 11:39:23.892  INFO 3332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-18 11:39:23.915  INFO 3332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-11-18 11:39:26.009  INFO 3332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-18 11:39:26.021  INFO 3332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2023-11-18 11:39:26.603  WARN 3332 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-18 11:39:26.662  INFO 3332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-18 11:39:26.989  INFO 3332 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-11-18 11:39:27.002  INFO 3332 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-18 11:39:27.085  INFO 3332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2023-11-18 11:39:27.114  INFO 3332 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 7.073 seconds (JVM running for 8.673)
+2023-11-18 11:39:27.115  INFO 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2023-11-18 11:39:27.116  INFO 3332 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-11-18 11:39:27.117  INFO 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2023-11-18 11:39:27.312  INFO 3332 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-11-18 11:39:27.312  INFO 3332 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-11-18 11:39:27.312  INFO 3332 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2023-11-18 11:39:27.347  INFO 3332 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-11-18 11:39:27.347  INFO 3332 --- [task-2] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2023-11-18 11:39:27.490  INFO 3332 --- [RMI TCP Connection(1)-10.80.235.132] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18 11:39:27.490  INFO 3332 --- [RMI TCP Connection(1)-10.80.235.132] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18 11:39:27.491  INFO 3332 --- [RMI TCP Connection(1)-10.80.235.132] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18 11:39:30.329 ERROR 3332 --- [task-1] c.s.docs.util.PdfProcessor               : Error: End-of-File, expected line
+2023-11-18 11:39:30.329  INFO 3332 --- [task-1] c.s.docs.util.PdfProcessor               : Documents merged
+2023-11-18 11:39:30.332 ERROR 3332 --- [task-1] c.s.docs.util.PdfProcessor               : File '6240671' does not exist
+2023-11-18 11:39:30.332 ERROR 3332 --- [task-1] c.s.docs.util.PdfProcessor               : null
+2023-11-18 11:39:30.332  INFO 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-11-18 11:39:31.117 ERROR 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : reports\CLAIM-1700296770302-210716440690956125-KE0002839680.pdf
+2023-11-18 11:39:31.118  INFO 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{}
+2023-11-18 11:39:31.118 ERROR 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-11-18 11:39:31.118 ERROR 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-11-18 11:39:31.119 ERROR 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-11-18 11:39:32.037 ERROR 3332 --- [task-1] c.s.docs.util.PdfProcessor               : expected='endstream' actual='' org.apache.pdfbox.io.PushBackInputStream@1ab234a6
+2023-11-18 11:39:32.037  INFO 3332 --- [task-1] c.s.docs.util.PdfProcessor               : Documents merged
+2023-11-18 11:39:32.037 ERROR 3332 --- [task-1] c.s.docs.util.PdfProcessor               : File '16744719' does not exist
+2023-11-18 11:39:32.037 ERROR 3332 --- [task-1] c.s.docs.util.PdfProcessor               : null
+2023-11-18 11:39:32.038  INFO 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-11-18 11:39:32.339 ERROR 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : reports\CLAIM-1700296771998-231116518919214214-KE0003630593.pdf
+2023-11-18 11:39:32.339  INFO 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{}
+2023-11-18 11:39:32.339 ERROR 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2023-11-18 11:39:32.339 ERROR 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-11-18 11:39:32.341 ERROR 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2023-11-18 11:39:32.974  INFO 3332 --- [task-1] c.s.docs.util.PdfProcessor               : Documents merged
+2023-11-18 11:39:33.006  INFO 3332 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2023-11-18 11:39:35.976  INFO 3332 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-11-18 11:39:35.978  INFO 3332 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-18 11:39:36.008  INFO 3332 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2023-11-18 11:39:36.008  INFO 3332 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-18 11:39:36.380  INFO 3332 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

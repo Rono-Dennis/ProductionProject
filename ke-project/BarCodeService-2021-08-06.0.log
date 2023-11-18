@@ -1,0 +1,728 @@
+2021-08-06 13:08:27.033  INFO 100464 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 1.8.0_271 on LP-TECH-OVTC with PID 100464 (D:\S-A-P\edi-doc-integration\target\classes started by Kenan in D:\S-A-P\edi-doc-integration)
+2021-08-06 13:08:27.044  INFO 100464 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2021-08-06 13:08:29.442  INFO 100464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-06 13:08:29.487  INFO 100464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2021-08-06 13:08:33.425  INFO 100464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2021-08-06 13:08:33.447  INFO 100464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-06 13:08:33.448  INFO 100464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-06 13:08:34.057  INFO 100464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-06 13:08:34.058  INFO 100464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6892 ms
+2021-08-06 13:08:35.078  INFO 100464 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-08-06 13:08:35.398  INFO 100464 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-08-06 13:08:36.315  INFO 100464 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-06 13:08:37.049  INFO 100464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-06 13:08:41.606  INFO 100464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-06 13:08:41.708  INFO 100464 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-08-06 13:08:56.853  INFO 100464 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-06 13:08:56.883  INFO 100464 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-08-06 13:08:58.846  WARN 100464 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-06 13:08:58.983  INFO 100464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-06 13:08:59.709  INFO 100464 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-06 13:08:59.749  INFO 100464 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-08-06 13:08:59.913  INFO 100464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2021-08-06 13:08:59.965  INFO 100464 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 34.069 seconds (JVM running for 36.444)
+2021-08-06 13:08:59.988  INFO 100464 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 13:08:59.988  INFO 100464 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 13:08:59.989  INFO 100464 --- [task-2] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 13:09:01.663  INFO 100464 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:09:01.663  INFO 100464 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 13:09:01.664  INFO 100464 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 13:09:02.702  INFO 100464 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:09:02.703  INFO 100464 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 13:11:31.463  INFO 71604 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 1.8.0_271 on LP-TECH-OVTC with PID 71604 (D:\S-A-P\edi-doc-integration\target\classes started by Kenan in D:\S-A-P\edi-doc-integration)
+2021-08-06 13:11:31.470  INFO 71604 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2021-08-06 13:11:33.133  INFO 71604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-06 13:11:33.182  INFO 71604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+2021-08-06 13:11:36.133  INFO 71604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2021-08-06 13:11:36.153  INFO 71604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-06 13:11:36.153  INFO 71604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-06 13:11:36.692  INFO 71604 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-06 13:11:36.693  INFO 71604 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5111 ms
+2021-08-06 13:11:37.538  INFO 71604 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-08-06 13:11:37.704  INFO 71604 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-08-06 13:11:38.097  INFO 71604 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-06 13:11:38.611  INFO 71604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-06 13:11:40.929  INFO 71604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-06 13:11:41.016  INFO 71604 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-08-06 13:11:47.054  INFO 71604 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-06 13:11:47.082  INFO 71604 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-08-06 13:11:48.691  WARN 71604 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-06 13:11:48.819  INFO 71604 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-06 13:11:49.450  INFO 71604 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-06 13:11:49.486  INFO 71604 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-08-06 13:11:49.614  INFO 71604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2021-08-06 13:11:49.652  INFO 71604 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 19.234 seconds (JVM running for 21.853)
+2021-08-06 13:11:49.664  INFO 71604 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 13:11:49.665  INFO 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 13:11:49.665  INFO 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 13:11:50.270  INFO 71604 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:11:50.270  INFO 71604 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 13:11:50.271  INFO 71604 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 13:11:50.680  INFO 71604 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:11:50.680  INFO 71604 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 13:15:35.635  INFO 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : files Extracted : 03082021143316-6376674-61378-CF-EH.676143 AMERLENE.pdf
+2021-08-06 13:16:10.813  INFO 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : files Extracted : 03082021142852-6375975-61378-CF-EH.676143 AMERLENE.pdf
+2021-08-06 13:20:27.493  INFO 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-08-06 13:21:27.656  INFO 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.}
+2021-08-06 13:21:49.671  INFO 71604 --- [task-3] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 13:21:49.671  INFO 71604 --- [task-4] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 13:21:49.672  INFO 71604 --- [task-4] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 13:21:49.921  INFO 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{isBarCodeMsg=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes., isBarCode=false, barCode=}
+2021-08-06 13:21:50.326  INFO 71604 --- [task-3] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:21:50.326  INFO 71604 --- [task-3] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 13:21:50.326  INFO 71604 --- [task-3] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 13:21:50.785  INFO 71604 --- [task-3] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:21:50.785  INFO 71604 --- [task-3] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 13:21:57.728  INFO 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-08-06 13:21:57.729 ERROR 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1628245120174-210802372495214075-KE0002107780.pdf failed to save in sharepoint with the following error file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.
+2021-08-06 13:29:02.694  INFO 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : files Extracted : 03082021143316-6376674-61378-CF-EH.676143 AMERLENE.pdf
+2021-08-06 13:29:16.773  INFO 71604 --- [task-4] c.s.docs.service.ClaimsInvLines          : files Extracted : 03082021143316-6376674-61378-CF-EH.676143 AMERLENE.pdf
+2021-08-06 13:29:48.556  INFO 71604 --- [task-4] c.s.docs.service.ClaimsInvLines          : files Extracted : 03082021142852-6375975-61378-CF-EH.676143 AMERLENE.pdf
+2021-08-06 13:29:52.849  INFO 71604 --- [task-2] c.s.docs.service.ClaimsInvLines          : files Extracted : 03082021142852-6375975-61378-CF-EH.676143 AMERLENE.pdf
+2021-08-06 13:31:49.651  INFO 71604 --- [task-5] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 13:31:49.651  INFO 71604 --- [task-6] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 13:31:49.653  INFO 71604 --- [task-6] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 13:31:50.647  INFO 71604 --- [task-5] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:31:50.647  INFO 71604 --- [task-5] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 13:31:50.647  INFO 71604 --- [task-5] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 13:31:51.375  INFO 71604 --- [task-5] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:31:51.376  INFO 71604 --- [task-5] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 13:40:27.365  INFO 71604 --- [task-4] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-08-06 13:41:49.657  INFO 71604 --- [task-7] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 13:41:49.658  INFO 71604 --- [task-8] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 13:41:49.658  INFO 71604 --- [task-8] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 13:41:50.371  INFO 71604 --- [task-7] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:41:50.371  INFO 71604 --- [task-7] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 13:41:50.371  INFO 71604 --- [task-7] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 13:41:50.678  INFO 71604 --- [task-7] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:41:50.678  INFO 71604 --- [task-7] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 13:52:34.356  INFO 94820 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 1.8.0_271 on LP-TECH-OVTC with PID 94820 (D:\S-A-P\edi-doc-integration\target\classes started by Kenan in D:\S-A-P\edi-doc-integration)
+2021-08-06 13:52:34.365  INFO 94820 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2021-08-06 13:52:36.409  INFO 94820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-06 13:52:36.448  INFO 94820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2021-08-06 13:52:40.054  INFO 94820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2021-08-06 13:52:40.079  INFO 94820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-06 13:52:40.080  INFO 94820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-06 13:52:40.671  INFO 94820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-06 13:52:40.672  INFO 94820 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6169 ms
+2021-08-06 13:52:41.574  INFO 94820 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-08-06 13:52:41.732  INFO 94820 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-08-06 13:52:42.168  INFO 94820 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-06 13:52:42.683  INFO 94820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-06 13:52:45.153  INFO 94820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-06 13:52:45.245  INFO 94820 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-08-06 13:52:50.156  INFO 94820 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-06 13:52:50.173  INFO 94820 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-08-06 13:52:51.998  WARN 94820 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-06 13:52:52.143  INFO 94820 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-06 13:52:52.768  INFO 94820 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-06 13:52:52.798  INFO 94820 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-08-06 13:52:52.929  INFO 94820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2021-08-06 13:52:52.973  INFO 94820 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 19.709 seconds (JVM running for 21.809)
+2021-08-06 13:52:52.985  INFO 94820 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 13:52:52.985  INFO 94820 --- [task-1] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 13:52:52.991  INFO 94820 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 13:52:53.539  INFO 94820 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:52:53.540  INFO 94820 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 13:52:53.540  INFO 94820 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 13:52:53.829  INFO 94820 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:52:53.830  INFO 94820 --- [task-2] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 13:55:05.630  INFO 94820 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-08-06 13:55:55.552  INFO 94820 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.}
+2021-08-06 13:55:55.553  INFO 94820 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{isBarCodeMsg=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes., isBarCode=false, barCode=}
+2021-08-06 13:55:55.553  INFO 94820 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-08-06 13:55:55.553 ERROR 94820 --- [task-1] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1628247207043-210802372495214075-KE0002107780.pdf failed to save in sharepoint with the following error file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.
+2021-08-06 13:56:28.815  INFO 94820 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 13:58:04.435  INFO 91152 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 1.8.0_271 on LP-TECH-OVTC with PID 91152 (D:\S-A-P\edi-doc-integration\target\classes started by Kenan in D:\S-A-P\edi-doc-integration)
+2021-08-06 13:58:04.443  INFO 91152 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2021-08-06 13:58:06.077  INFO 91152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-06 13:58:06.117  INFO 91152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2021-08-06 13:58:08.906  INFO 91152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2021-08-06 13:58:08.930  INFO 91152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-06 13:58:08.931  INFO 91152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-06 13:58:09.415  INFO 91152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-06 13:58:09.415  INFO 91152 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4859 ms
+2021-08-06 13:58:10.173  INFO 91152 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-08-06 13:58:10.314  INFO 91152 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-08-06 13:58:10.691  INFO 91152 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-06 13:58:11.146  INFO 91152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-06 13:58:13.535  INFO 91152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-06 13:58:13.613  INFO 91152 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-08-06 13:58:18.188  INFO 91152 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-06 13:58:18.208  INFO 91152 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-08-06 13:58:19.669  WARN 91152 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-06 13:58:19.807  INFO 91152 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-06 13:58:20.407  INFO 91152 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-06 13:58:20.444  INFO 91152 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-08-06 13:58:20.588  INFO 91152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2021-08-06 13:58:20.628  INFO 91152 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 17.127 seconds (JVM running for 19.061)
+2021-08-06 13:58:20.664  INFO 91152 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 13:58:20.664  INFO 91152 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 13:58:20.666  INFO 91152 --- [task-2] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 13:58:21.285  INFO 91152 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:58:21.285  INFO 91152 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 13:58:21.285  INFO 91152 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 13:58:21.571  INFO 91152 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:58:21.571  INFO 91152 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 13:59:34.475  INFO 48664 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 1.8.0_271 on LP-TECH-OVTC with PID 48664 (D:\S-A-P\edi-doc-integration\target\classes started by Kenan in D:\S-A-P\edi-doc-integration)
+2021-08-06 13:59:34.484  INFO 48664 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2021-08-06 13:59:36.051  INFO 48664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-06 13:59:36.087  INFO 48664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2021-08-06 13:59:38.771  INFO 48664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2021-08-06 13:59:38.788  INFO 48664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-06 13:59:38.789  INFO 48664 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-06 13:59:39.326  INFO 48664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-06 13:59:39.326  INFO 48664 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4730 ms
+2021-08-06 13:59:40.140  INFO 48664 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-08-06 13:59:40.263  INFO 48664 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-08-06 13:59:40.629  INFO 48664 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-06 13:59:41.097  INFO 48664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-06 13:59:43.492  INFO 48664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-06 13:59:43.577  INFO 48664 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-08-06 13:59:48.216  INFO 48664 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-06 13:59:48.239  INFO 48664 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-08-06 13:59:49.803  WARN 48664 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-06 13:59:49.956  INFO 48664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-06 13:59:50.564  INFO 48664 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-06 13:59:50.601  INFO 48664 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-08-06 13:59:50.729  INFO 48664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2021-08-06 13:59:50.766  INFO 48664 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 17.175 seconds (JVM running for 19.09)
+2021-08-06 13:59:50.775  INFO 48664 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 13:59:50.775  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 13:59:50.775  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 13:59:51.322  INFO 48664 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:59:51.323  INFO 48664 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 13:59:51.323  INFO 48664 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 13:59:51.626  INFO 48664 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 13:59:51.627  INFO 48664 --- [task-2] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 14:07:00.871  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-08-06 14:07:30.485  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.}
+2021-08-06 14:07:30.486  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{isBarCodeMsg=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes., isBarCode=false, barCode=}
+2021-08-06 14:07:30.486  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-08-06 14:07:30.486 ERROR 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1628247627168-210802372495214075-KE0002107780.pdf failed to save in sharepoint with the following error file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.
+2021-08-06 14:07:54.513  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:08:14.750  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:08:26.679  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:09:50.782  INFO 48664 --- [task-4] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 14:09:50.783  INFO 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 14:09:50.784  INFO 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 14:09:51.111  INFO 48664 --- [task-4] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 14:09:51.111  INFO 48664 --- [task-4] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 14:09:51.112  INFO 48664 --- [task-4] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 14:09:51.428  INFO 48664 --- [task-4] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 14:09:51.428  INFO 48664 --- [task-4] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 14:18:49.172  INFO 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-08-06 14:19:04.581  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-08-06 14:19:46.299  INFO 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.}
+2021-08-06 14:19:46.299  INFO 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{isBarCodeMsg=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes., isBarCode=false, barCode=}
+2021-08-06 14:19:50.767  INFO 48664 --- [task-5] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 14:19:50.767  INFO 48664 --- [task-5] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 14:19:50.768  INFO 48664 --- [task-6] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 14:19:52.123  INFO 48664 --- [task-6] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 14:19:52.123  INFO 48664 --- [task-6] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 14:19:52.124  INFO 48664 --- [task-6] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 14:19:52.800  INFO 48664 --- [task-6] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 14:19:52.801  INFO 48664 --- [task-6] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 14:19:52.846  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.}
+2021-08-06 14:19:52.846  INFO 48664 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{isBarCodeMsg=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes., isBarCode=false, barCode=}
+2021-08-06 14:20:04.468  INFO 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-08-06 14:20:11.164 ERROR 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1628248707963-210802372495214075-KE0002107780.pdf failed to save in sharepoint with the following error file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.
+2021-08-06 14:20:22.405  INFO 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:20:29.779  INFO 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:20:50.835  INFO 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:21:59.651 ERROR 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2021-08-06 14:25:03.124  INFO 48664 --- [task-3] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:26:03.165  INFO 101372 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 1.8.0_271 on LP-TECH-OVTC with PID 101372 (D:\S-A-P\edi-doc-integration\target\classes started by Kenan in D:\S-A-P\edi-doc-integration)
+2021-08-06 14:26:03.173  INFO 101372 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2021-08-06 14:26:05.041  INFO 101372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-06 14:26:05.075  INFO 101372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2021-08-06 14:26:08.228  INFO 101372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2021-08-06 14:26:08.257  INFO 101372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-06 14:26:08.258  INFO 101372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-06 14:26:08.909  INFO 101372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-06 14:26:08.910  INFO 101372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5592 ms
+2021-08-06 14:26:09.883  INFO 101372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-08-06 14:26:10.066  INFO 101372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-08-06 14:26:10.533  INFO 101372 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-06 14:26:11.130  INFO 101372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-06 14:26:14.017  INFO 101372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-06 14:26:14.115  INFO 101372 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-08-06 14:26:19.320  INFO 101372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-06 14:26:19.352  INFO 101372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-08-06 14:26:21.420  WARN 101372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-06 14:26:21.594  INFO 101372 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-06 14:26:22.310  INFO 101372 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-06 14:26:22.348  INFO 101372 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-08-06 14:26:22.506  INFO 101372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2021-08-06 14:26:22.594  INFO 101372 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 20.639 seconds (JVM running for 22.999)
+2021-08-06 14:26:22.612  INFO 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 14:26:22.612  INFO 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 14:26:22.613  INFO 101372 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 14:26:23.282  INFO 101372 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 14:26:23.282  INFO 101372 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 14:26:23.283  INFO 101372 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 14:26:23.657  INFO 101372 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 14:26:23.657  INFO 101372 --- [task-2] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 14:26:46.059  INFO 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-08-06 14:27:18.044  INFO 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.}
+2021-08-06 14:27:18.044  INFO 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{isBarCodeMsg=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes., isBarCode=false, barCode=}
+2021-08-06 14:27:23.090  INFO 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-08-06 14:27:23.091 ERROR 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1628249193618-210802372495214075-KE0002107780.pdf failed to save in sharepoint with the following error file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.
+2021-08-06 14:27:28.596  INFO 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:27:32.261  INFO 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:27:37.045  INFO 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:27:42.238  INFO 101372 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:29:23.054  INFO 31764 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 1.8.0_271 on LP-TECH-OVTC with PID 31764 (D:\S-A-P\edi-doc-integration\target\classes started by Kenan in D:\S-A-P\edi-doc-integration)
+2021-08-06 14:29:23.061  INFO 31764 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2021-08-06 14:29:24.618  INFO 31764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-06 14:29:24.660  INFO 31764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2021-08-06 14:29:27.379  INFO 31764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2021-08-06 14:29:27.398  INFO 31764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-06 14:29:27.399  INFO 31764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-06 14:29:27.967  INFO 31764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-06 14:29:27.968  INFO 31764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4799 ms
+2021-08-06 14:29:28.824  INFO 31764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-08-06 14:29:28.956  INFO 31764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-08-06 14:29:29.295  INFO 31764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-06 14:29:29.742  INFO 31764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-06 14:29:32.004  INFO 31764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-06 14:29:32.083  INFO 31764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-08-06 14:29:36.670  INFO 31764 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-06 14:29:36.691  INFO 31764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-08-06 14:29:38.162  WARN 31764 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-06 14:29:38.302  INFO 31764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-06 14:29:38.887  INFO 31764 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-06 14:29:38.921  INFO 31764 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-08-06 14:29:39.046  INFO 31764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2021-08-06 14:29:39.086  INFO 31764 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 16.982 seconds (JVM running for 19.062)
+2021-08-06 14:29:39.096  INFO 31764 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 14:29:39.097  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 14:29:39.098  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 14:29:39.637  INFO 31764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 14:29:39.638  INFO 31764 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 14:29:39.638  INFO 31764 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 14:29:39.983  INFO 31764 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 14:29:39.983  INFO 31764 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 14:29:50.779  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-08-06 14:30:20.885  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.}
+2021-08-06 14:30:20.885  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{isBarCodeMsg=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes., isBarCode=false, barCode=}
+2021-08-06 14:30:33.571  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-08-06 14:30:33.571 ERROR 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1628249386288-210802372495214075-KE0002107780.pdf failed to save in sharepoint with the following error file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.
+2021-08-06 14:30:35.996  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:30:38.565  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:30:39.805  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:30:40.781  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:30:50.563  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-08-06 14:31:33.476  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.}
+2021-08-06 14:31:33.477  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{isBarCodeMsg=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes., isBarCode=false, barCode=}
+2021-08-06 14:32:34.930  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-08-06 14:32:34.931 ERROR 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1628249446322-210802372495214075-KE0002107780.pdf failed to save in sharepoint with the following error file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.
+2021-08-06 14:32:34.933  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:32:34.936  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:32:34.939  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:32:34.939 ERROR 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2021-08-06 14:32:43.335  INFO 31764 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Portal Documents
+2021-08-06 14:39:39.091  INFO 31764 --- [task-3] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 14:39:39.091  INFO 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 14:39:39.092  INFO 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 14:39:40.450  INFO 31764 --- [task-3] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 14:39:40.451  INFO 31764 --- [task-3] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 14:39:40.451  INFO 31764 --- [task-3] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 14:39:41.052  INFO 31764 --- [task-3] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2021-08-06 14:39:41.052  INFO 31764 --- [task-3] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 14:39:50.736  INFO 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2021-08-06 14:40:24.222  INFO 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.}
+2021-08-06 14:40:24.222  INFO 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : ****************** SHAREPOINT RESPONCE ****************{isBarCodeMsg=file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes., isBarCode=false, barCode=}
+2021-08-06 14:40:24.222  INFO 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2021-08-06 14:40:24.222 ERROR 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : 😭 😭 😭 😭 Document file CLAIM-1628249990543-210802372495214075-KE0002107780.pdf failed to save in sharepoint with the following error file upload error - The request message is too big. The server does not allow messages larger than 2097152 bytes.
+2021-08-06 14:40:24.223  INFO 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:40:24.226  INFO 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:40:24.228  INFO 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 14:40:24.231  INFO 31764 --- [task-4] c.s.docs.service.ClaimsInvLines          : File deleted locally after Push to UAP and Smart Server
+2021-08-06 22:14:57.459  INFO 107872 --- [main] c.s.d.DocsIntegrationApplicationTests    : Starting DocsIntegrationApplicationTests using Java 1.8.0_271 on LP-TECH-OVTC with PID 107872 (started by Kenan in D:\S-A-P\edi-doc-integration)
+2021-08-06 22:14:57.460  INFO 107872 --- [main] c.s.d.DocsIntegrationApplicationTests    : The following profiles are active: default
+2021-08-06 22:14:59.004  INFO 107872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-06 22:14:59.054  INFO 107872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2021-08-06 22:15:00.973  INFO 107872 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-08-06 22:15:01.120  INFO 107872 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-08-06 22:15:01.465  INFO 107872 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-06 22:15:02.208  INFO 107872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-06 22:15:04.689  INFO 107872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-06 22:15:04.811  INFO 107872 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-08-06 22:15:09.639  INFO 107872 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-06 22:15:09.658  INFO 107872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-08-06 22:15:12.085  WARN 107872 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-06 22:15:12.401  INFO 107872 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-06 22:15:13.642  INFO 107872 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-06 22:15:13.730  INFO 107872 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-08-06 22:15:13.910  INFO 107872 --- [main] c.s.d.DocsIntegrationApplicationTests    : Started DocsIntegrationApplicationTests in 17.053 seconds (JVM running for 19.155)
+2021-08-06 22:15:13.920  INFO 107872 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Portal Documents
+2021-08-06 22:15:13.920  INFO 107872 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2021-08-06 22:15:13.920  INFO 107872 --- [task-2] c.s.docs.service.ClaimsInvLines          : ===================processSpAttachments============================== : 
+2021-08-06 22:15:14.267  INFO 107872 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-08-06 22:15:14.270  INFO 107872 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-06 22:15:14.278  WARN 107872 --- [task-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@26ef53fe marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:779) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:983) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1168) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1362) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:369) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) [HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:452) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) [spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.fetchClaims(ClaimsRepo.java:81) [classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) [spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$e8b3c887.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:122) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_271]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_271]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:258) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:180) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:555) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:258) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:190) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:132) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:105) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:91) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:784) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:449) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:410) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:269) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:655) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:229) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:41) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:765) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	... 37 common frames omitted
+
+2021-08-06 22:15:14.278  WARN 107872 --- [task-2] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@51e3d37e marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:779) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:983) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1168) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1362) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:369) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) [HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:452) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) [spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) [classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) [spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$e8b3c887.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_271]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_271]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:258) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:180) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:555) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:258) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:190) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:132) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:105) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:91) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:784) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:449) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:410) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:269) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:655) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:229) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:41) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:765) ~[ojdbc6-11.2.0.3.jar:19.6.0.0.0]
+	... 37 common frames omitted
+
+2021-08-06 22:15:14.307  INFO 107872 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2021-08-06 22:15:14.310  INFO 107872 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-06 22:15:14.456  WARN 107872 --- [task-2] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.setDataSource(SQLErrorCodeSQLExceptionTranslator.java:141) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.<init>(SQLErrorCodeSQLExceptionTranslator.java:102) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcAccessor.getExceptionTranslator(JdbcAccessor.java:136) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$e8b3c887.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_271]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_271]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 37 common frames omitted
+
+2021-08-06 22:15:14.460  WARN 107872 --- [task-2] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SupplierUtils.resolve(SupplierUtils.java:40) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.getSqlErrorCodes(SQLErrorCodeSQLExceptionTranslator.java:171) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:193) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.getSpClaimsWithAttchments(ClaimsRepo.java:240) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$e8b3c887.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_271]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_271]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 38 common frames omitted
+
+2021-08-06 22:15:14.463  WARN 107872 --- [task-1] o.s.jdbc.support.SQLErrorCodesFactory    : Error while extracting database name
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:363) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.resolveErrorCodes(SQLErrorCodesFactory.java:235) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.lambda$setDataSource$0(SQLErrorCodeSQLExceptionTranslator.java:140) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:97) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.util.function.SupplierUtils.resolve(SupplierUtils.java:40) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.getSqlErrorCodes(SQLErrorCodeSQLExceptionTranslator.java:171) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:193) [spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.fetchClaims(ClaimsRepo.java:81) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$e8b3c887.fetchClaims(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:122) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_271]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_271]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection: Session/EntityManager is closed
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:85) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:337) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	... 38 common frames omitted
+
+2021-08-06 22:15:14.466 ERROR 107872 --- [task-1] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.orderedStream(DefaultListableBeanFactory.java:481) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:167) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:149) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) [spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) [spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$e8b3c887.fetchClaims(<generated>) [classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:122) [classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) [classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) [spring-aop-5.3.1.jar:5.3.1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_271]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_271]
+
+2021-08-06 22:15:14.466 ERROR 107872 --- [task-2] o.s.t.i.TransactionInterceptor           : Application exception overridden by rollback exception
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.orderedStream(DefaultListableBeanFactory.java:481) ~[spring-beans-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:167) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:149) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) [spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) [spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$e8b3c887.getSpClaimsWithAttchments(<generated>) [classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) [classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) [classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) [spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) [spring-aop-5.3.1.jar:5.3.1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_271]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_271]
+
+2021-08-06 22:15:14.469 ERROR 107872 --- [task-2] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void c.s.docs.daemon.ClaimsDaemon.processSpAttachments()
+
+org.springframework.transaction.TransactionSystemException: Could not roll back JPA transaction; nested exception is org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:593) ~[spring-orm-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:835) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:809) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:655) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:375) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$e8b3c887.getSpClaimsWithAttchments(<generated>) ~[classes/:na]
+	at c.s.docs.service.SpAttachmentService.processSpAttachments(SpAttachmentService.java:73) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processSpAttachments(ClaimsDaemon.java:48) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_271]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_271]
+Caused by: org.hibernate.TransactionException: Unable to rollback against JDBC Connection
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:127) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:304) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:142) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:589) ~[spring-orm-5.3.1.jar:5.3.1]
+	... 21 common frames omitted
+Caused by: java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515) ~[HikariCP-3.4.5.jar:na]
+	at com.sun.proxy.$Proxy91.rollback(Unknown Source) ~[na:na]
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:396) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:121) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
+	... 24 common frames omitted
+
+2021-08-06 22:15:14.474  INFO 107872 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2021-08-06 22:15:14.475  INFO 107872 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2021-08-06 22:15:14.478  INFO 107872 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2021-08-06 22:15:15.363  INFO 107872 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

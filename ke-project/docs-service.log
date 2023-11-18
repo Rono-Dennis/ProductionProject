@@ -1,0 +1,24 @@
+2021-06-18 19:58:44.692  INFO 49236 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 1.8.0_271 on LP-TECH-OVTC with PID 49236 (D:\S-A-P\edi-doc-integration\target\classes started by Kenan in D:\S-A-P\edi-doc-integration)
+2021-06-18 19:58:44.711  INFO 49236 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2021-06-18 19:58:45.866  INFO 49236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-18 19:58:45.888  INFO 49236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2021-06-18 19:58:47.634  INFO 49236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8327 (http)
+2021-06-18 19:58:47.649  INFO 49236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-18 19:58:47.649  INFO 49236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-18 19:58:47.919  INFO 49236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-18 19:58:47.919  INFO 49236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3114 ms
+2021-06-18 19:58:48.464  INFO 49236 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2021-06-18 19:58:48.548  INFO 49236 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-06-18 19:58:48.774  INFO 49236 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-18 19:58:49.016  INFO 49236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-18 19:58:50.749  INFO 49236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-18 19:58:50.798  INFO 49236 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2021-06-18 19:58:54.642  INFO 49236 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-18 19:58:54.658  INFO 49236 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2021-06-18 19:58:55.200  WARN 49236 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-18 19:58:55.295  INFO 49236 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-18 19:58:55.906  INFO 49236 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-06-18 19:58:55.938  INFO 49236 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-18 19:58:56.017  INFO 49236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8327 (http) with context path ''
+2021-06-18 19:58:56.038  INFO 49236 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 11.979 seconds (JVM running for 13.143)
+2021-06-18 19:59:29.848  INFO 49236 --- [scheduling-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]

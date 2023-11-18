@@ -1,0 +1,458 @@
+2022-03-24 18:52:36.545  INFO 31980 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 31980 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2022-03-24 18:52:36.579  INFO 31980 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2022-03-24 18:52:37.530  INFO 47192 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 47192 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2022-03-24 18:52:37.542  INFO 47192 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2022-03-24 18:52:39.073  INFO 31980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 18:52:39.122  INFO 31980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+2022-03-24 18:52:39.660  INFO 47192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 18:52:39.750  INFO 47192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 0 JPA repository interfaces.
+2022-03-24 18:52:43.379  INFO 31980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2022-03-24 18:52:43.416  INFO 31980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 18:52:43.417  INFO 31980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-24 18:52:43.519  INFO 47192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2022-03-24 18:52:43.540  INFO 47192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 18:52:43.542  INFO 47192 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-24 18:52:44.143  INFO 31980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 18:52:44.144  INFO 31980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7383 ms
+2022-03-24 18:52:44.309  INFO 47192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 18:52:44.310  INFO 47192 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6608 ms
+2022-03-24 18:52:46.037  INFO 31980 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2022-03-24 18:52:46.037  INFO 47192 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2022-03-24 18:52:46.226  INFO 47192 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-24 18:52:46.245  INFO 31980 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-24 18:52:46.746  INFO 47192 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 18:52:46.757  INFO 31980 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 18:52:47.112  INFO 47192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 18:52:47.124  INFO 31980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 18:52:48.311  INFO 47192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 18:52:48.331  INFO 31980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 18:52:48.512  INFO 31980 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-03-24 18:52:48.533  INFO 47192 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-03-24 18:52:50.028  INFO 31980 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 18:52:50.050  INFO 31980 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 18:52:50.236  INFO 47192 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 18:52:50.255  INFO 47192 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 18:52:51.735  WARN 31980 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 18:52:51.915  WARN 47192 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 18:52:52.004  INFO 31980 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-24 18:52:52.174  INFO 47192 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-24 18:52:52.851  INFO 31980 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-03-24 18:52:52.892  INFO 31980 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-24 18:52:52.991  INFO 47192 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-03-24 18:52:53.036  INFO 47192 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-24 18:52:53.037  INFO 31980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2022-03-24 18:52:53.081  INFO 31980 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 17.946 seconds (JVM running for 19.152)
+2022-03-24 18:52:53.112  INFO 31980 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2022-03-24 18:52:53.143  WARN 47192 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8795 is already in use
+2022-03-24 18:52:53.145  INFO 47192 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-03-24 18:52:53.148  INFO 47192 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-24 18:52:53.188  INFO 47192 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 18:52:53.190  INFO 47192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 18:52:53.277  INFO 47192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 18:52:53.285  INFO 47192 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-03-24 18:52:53.317  INFO 47192 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-24 18:52:53.357 ERROR 47192 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8795 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8795 or configure this application to listen on another port.
+
+2022-03-24 18:53:46.311  WARN 31980 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s870ms72µs200ns).
+2022-03-24 18:53:48.677  INFO 31980 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[30]
+2022-03-24 18:53:49.569  INFO 31980 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2022-03-24 18:53:49.569  INFO 31980 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2022-03-24 18:54:03.574  INFO 31980 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2022-03-24 18:54:03.576  INFO 31980 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2022-03-24 18:55:19.325  INFO 31980 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-03-24 18:55:19.326  INFO 31980 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-24 18:55:19.341  INFO 31980 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 18:55:19.342  INFO 31980 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 18:55:19.397  INFO 31980 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 18:55:29.899  INFO 47656 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 47656 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2022-03-24 18:55:29.905  INFO 47656 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2022-03-24 18:55:30.797  INFO 47656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 18:55:30.816  INFO 47656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2022-03-24 18:55:32.294  INFO 47656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2022-03-24 18:55:32.305  INFO 47656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 18:55:32.305  INFO 47656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-24 18:55:32.592  INFO 47656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 18:55:32.593  INFO 47656 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2580 ms
+2022-03-24 18:55:32.999  INFO 47656 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2022-03-24 18:55:33.082  INFO 47656 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-24 18:55:33.245  INFO 47656 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 18:55:33.424  INFO 47656 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 18:55:33.975  INFO 47656 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 18:55:34.024  INFO 47656 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-03-24 18:55:34.818  INFO 47656 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 18:55:34.828  INFO 47656 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 18:55:35.560  WARN 47656 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 18:55:35.713  INFO 47656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-24 18:55:36.120  INFO 47656 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-03-24 18:55:36.146  INFO 47656 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-24 18:55:36.221  INFO 47656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2022-03-24 18:55:36.246  INFO 47656 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 7.022 seconds (JVM running for 8.131)
+2022-03-24 18:55:36.254  INFO 47656 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2022-03-24 18:55:36.505  INFO 47656 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[30]
+2022-03-24 18:55:37.240  INFO 47656 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2022-03-24 18:55:37.240  INFO 47656 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2022-03-24 18:55:37.256  INFO 47656 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2022-03-24 18:55:37.256  INFO 47656 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2022-03-24 19:03:05.499  INFO 47656 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-03-24 19:03:05.501  INFO 47656 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-24 19:03:05.516  INFO 47656 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 19:03:05.517  INFO 47656 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 19:03:05.574  INFO 47656 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 19:04:33.149  INFO 46996 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 46996 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2022-03-24 19:04:33.154  INFO 46996 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2022-03-24 19:04:34.480  INFO 46996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 19:04:34.514  INFO 46996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2022-03-24 19:04:36.648  INFO 46996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2022-03-24 19:04:36.664  INFO 46996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 19:04:36.665  INFO 46996 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-24 19:04:37.099  INFO 46996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 19:04:37.099  INFO 46996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3826 ms
+2022-03-24 19:04:37.755  INFO 46996 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2022-03-24 19:04:37.913  INFO 46996 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-24 19:04:38.263  INFO 46996 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 19:04:38.606  INFO 46996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 19:04:39.615  INFO 46996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 19:04:39.700  INFO 46996 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-03-24 19:04:40.844  INFO 46996 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 19:04:40.879  INFO 46996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 19:04:41.981  WARN 46996 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 19:04:42.145  INFO 46996 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-24 19:04:42.639  INFO 46996 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-03-24 19:04:42.675  INFO 46996 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-24 19:04:42.792  INFO 46996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2022-03-24 19:04:42.826  INFO 46996 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 10.838 seconds (JVM running for 12.226)
+2022-03-24 19:04:42.837  INFO 46996 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2022-03-24 19:04:51.300  INFO 46996 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[30]
+2022-03-24 19:11:50.976  WARN 46996 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m52s799ms274µs600ns).
+2022-03-24 19:11:51.393  INFO 46996 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-03-24 19:11:51.395  INFO 46996 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-24 19:11:51.410  INFO 46996 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 19:11:51.411  INFO 46996 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 19:11:51.414  WARN 46996 --- [task-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection oracle.jdbc.driver.T4CConnection@57f0bfc3 marked as broken because of SQLSTATE(08006), ErrorCode(17002)
+
+java.sql.SQLRecoverableException: IO Error: Socket read interrupted
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:900) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.prepareDefineBufferAndExecute(OracleStatement.java:1158) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1093) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLSelect(OracleStatement.java:1402) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1285) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1687) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:394) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:452) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:465) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:475) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:508) ~[spring-jdbc-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo.validateVisitStart(ClaimsRepo.java:113) ~[classes/:na]
+	at c.s.docs.repo.ClaimsRepo$$FastClassBySpringCGLIB$$c814c6b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:134) ~[spring-tx-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at c.s.docs.repo.ClaimsRepo$$EnhancerBySpringCGLIB$$75cfe32c.validateVisitStart(<generated>) ~[classes/:na]
+	at c.s.docs.service.ClaimsInvLines.getClaimWithoutAttachments(ClaimsInvLines.java:183) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon.processClaimsWithoutAttachments(ClaimsDaemon.java:33) ~[classes/:na]
+	at c.s.docs.daemon.ClaimsDaemon$$FastClassBySpringCGLIB$$26ffe1b8.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.3.1.jar:5.3.1]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.InterruptedIOException: Socket read interrupted
+	at oracle.net.nt.TimeoutSocketChannel.handleInterrupt(TimeoutSocketChannel.java:549) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.write(TimeoutSocketChannel.java:472) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIOPacket.writeToSocketChannel(NIOPacket.java:361) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.writeDataToSocketChannel(NIONSDataChannel.java:206) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.net.ns.NIONSDataChannel.writeDataToSocketChannel(NIONSDataChannel.java:151) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.flush(T4CMAREngineNIO.java:804) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:822) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:487) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:577) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:108) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:887) ~[ojdbc8-21.1.0.0.jar:21.1.0.0.0]
+	... 41 common frames omitted
+
+2022-03-24 19:11:51.467  INFO 46996 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 19:12:01.951  INFO 60976 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 60976 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2022-03-24 19:12:01.956  INFO 60976 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2022-03-24 19:12:02.961  INFO 60976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 19:12:02.986  INFO 60976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2022-03-24 19:12:04.817  INFO 60976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2022-03-24 19:12:04.844  INFO 60976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 19:12:04.845  INFO 60976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-24 19:12:05.322  INFO 60976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 19:12:05.323  INFO 60976 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3278 ms
+2022-03-24 19:12:05.953  INFO 60976 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2022-03-24 19:12:06.084  INFO 60976 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-24 19:12:06.420  INFO 60976 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 19:12:06.739  INFO 60976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 19:12:07.609  INFO 60976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 19:12:07.702  INFO 60976 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-03-24 19:12:08.999  INFO 60976 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 19:12:09.019  INFO 60976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 19:12:10.323  WARN 60976 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 19:12:10.529  INFO 60976 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-24 19:12:11.029  INFO 60976 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-03-24 19:12:11.056  INFO 60976 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-24 19:12:11.150  INFO 60976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2022-03-24 19:12:11.184  INFO 60976 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 9.985 seconds (JVM running for 11.109)
+2022-03-24 19:12:11.195  INFO 60976 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2022-03-24 19:12:18.832  INFO 60976 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[30]
+2022-03-24 19:12:20.963  INFO 60976 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:12:26.547  INFO 60976 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:12:32.100  INFO 60976 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:13:22.627 ERROR 60976 --- [task-1] c.s.docs.service.ClaimsInvLines          : IO Timeout - Connection timed out: connect
+2022-03-24 19:13:22.628 ERROR 60976 --- [task-1] c.s.docs.service.ClaimsInvLines          : Connection to UAP Sharepoint server failed 😭 😭 😭 😭
+2022-03-24 19:13:22.629 ERROR 60976 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:14:05.342  WARN 60976 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s293ms326µs300ns).
+2022-03-24 19:14:05.347  INFO 60976 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:14:05.747  INFO 60976 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-03-24 19:14:05.750  INFO 60976 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-24 19:14:05.773  INFO 60976 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 19:14:05.775  INFO 60976 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 19:14:05.839  INFO 60976 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 19:16:26.509  INFO 66268 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 66268 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2022-03-24 19:16:26.515  INFO 66268 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: default
+2022-03-24 19:16:27.852  INFO 66268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 19:16:27.888  INFO 66268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2022-03-24 19:16:29.897  INFO 66268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8795 (http)
+2022-03-24 19:16:29.912  INFO 66268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 19:16:29.913  INFO 66268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-24 19:16:30.341  INFO 66268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-24 19:16:30.341  INFO 66268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3704 ms
+2022-03-24 19:16:30.895  INFO 66268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2022-03-24 19:16:31.012  INFO 66268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-24 19:16:31.345  INFO 66268 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-24 19:16:31.710  INFO 66268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-24 19:16:32.998  INFO 66268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-24 19:16:33.053  INFO 66268 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-03-24 19:16:36.232  INFO 66268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 19:16:36.247  INFO 66268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 19:16:37.078  WARN 66268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 19:16:37.203  INFO 66268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-24 19:16:37.601  INFO 66268 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-03-24 19:16:37.625  INFO 66268 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-24 19:16:37.716  INFO 66268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8795 (http) with context path ''
+2022-03-24 19:16:37.747  INFO 66268 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 12.246 seconds (JVM running for 13.277)
+2022-03-24 19:16:37.755  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2022-03-24 19:16:44.014  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[30]
+2022-03-24 19:16:45.922  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:16:51.743  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:16:56.840  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:04.136  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69195001}
+2022-03-24 19:17:04.136  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:05.435 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:12.145  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:12.669  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:12.684  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:13.958  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69195101}
+2022-03-24 19:17:13.959  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:15.249 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:15.467  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:15.892  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:15.911  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:16.852  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69195201}
+2022-03-24 19:17:16.853  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:17.955 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:18.121  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:18.582  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:18.598  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:19.366  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69195301}
+2022-03-24 19:17:19.366  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:21.572 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:21.817  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:22.287  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:22.306  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:23.149  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69195401}
+2022-03-24 19:17:23.150  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:24.589 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:24.757  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:25.291  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:25.304  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:26.442  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69195501}
+2022-03-24 19:17:26.443  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:27.695 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:27.928  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:28.817  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:28.847  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:29.643  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69195601}
+2022-03-24 19:17:29.643  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:30.991 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:31.726  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:33.109  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:33.121  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:34.082  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69195701}
+2022-03-24 19:17:34.083  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:38.363 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:39.738  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:41.704  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:41.714  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:43.498  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69195801}
+2022-03-24 19:17:43.498  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:47.551 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:47.811  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:49.053  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:49.092  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:50.953  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69195901}
+2022-03-24 19:17:50.954  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:54.145 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:54.613  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:55.027  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:55.036  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:17:56.060  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69196001}
+2022-03-24 19:17:56.060  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:17:58.549 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:17:58.762  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:59.759  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:17:59.785  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:01.117  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69196101}
+2022-03-24 19:18:01.118  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:03.313 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:03.615  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:04.034  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:04.049  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:04.984  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69196201}
+2022-03-24 19:18:04.985  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:06.253 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:06.558  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:07.439  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:07.455  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:08.467  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69196301}
+2022-03-24 19:18:08.467  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:10.495 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:10.757  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:11.332  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:11.346  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:12.720  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69196401}
+2022-03-24 19:18:12.721  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:14.925 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:15.090  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:15.477  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:15.490  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:16.454  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69196501}
+2022-03-24 19:18:16.454  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:17.772 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:17.963  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:18.356  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:18.364  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:19.181  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69196601}
+2022-03-24 19:18:19.181  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:20.660 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:20.932  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:21.311  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:21.319  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:22.177  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69196701}
+2022-03-24 19:18:22.177  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:24.219 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:24.430  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:24.918  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:24.927  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:25.798  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69196801}
+2022-03-24 19:18:25.799  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:27.172 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:27.409  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:27.962  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:27.970  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:29.168  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69196901}
+2022-03-24 19:18:29.168  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:30.728 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:31.050  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:32.501  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:32.523  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:34.760  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69197001}
+2022-03-24 19:18:34.761  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:35.828 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:36.043  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:36.437  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:36.445  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:37.418  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69197201}
+2022-03-24 19:18:37.418  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:38.862 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:39.032  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:39.433  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:39.441  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:40.353  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69197401}
+2022-03-24 19:18:40.353  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:41.428 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:41.648  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:41.961  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:41.969  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:42.828  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69197601}
+2022-03-24 19:18:42.828  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:44.582 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:44.769  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:46.346  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:46.368  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:47.521  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69197701}
+2022-03-24 19:18:47.521  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:49.499 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:49.729  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:50.222  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:50.229  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:51.069  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69197801}
+2022-03-24 19:18:51.069  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:52.231 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:52.471  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:53.602  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:53.617  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:54.587  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69197901}
+2022-03-24 19:18:54.588  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:55.856 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:56.105  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:57.103  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:18:57.120  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:18:57.978  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69198001}
+2022-03-24 19:18:57.979  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:18:59.361 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:18:59.550  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:19:00.363  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:19:00.464  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:19:01.488  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69198101}
+2022-03-24 19:19:01.489  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:19:02.718 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:19:02.976  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:19:03.657  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** GENERATING PDF DOCUMENR****************
+2022-03-24 19:19:03.667  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** SENDING THE PDF TO SHAREPOINT ****************
+2022-03-24 19:19:04.473  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : {UploadSmartDocumentProdResult=69198201}
+2022-03-24 19:19:04.473  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** BARCODE SHARED ****************
+2022-03-24 19:19:06.643 ERROR 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : File deletion failed
+2022-03-24 19:19:06.643  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2022-03-24 19:19:06.644  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2022-03-24 19:19:06.734  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2022-03-24 19:19:06.734  INFO 66268 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2022-03-24 19:21:34.417  INFO 66268 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-03-24 19:21:34.418  INFO 66268 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-24 19:21:34.438  INFO 66268 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-24 19:21:34.440  INFO 66268 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 19:21:34.927  INFO 66268 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

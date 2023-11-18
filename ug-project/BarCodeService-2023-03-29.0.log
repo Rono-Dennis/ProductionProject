@@ -1,0 +1,70 @@
+2023-03-29 10:38:06.257  INFO 23144 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.15.1 on LP-TECH-0VMQ with PID 23144 (C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug\target\classes started by lamech.ngeno in C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug)
+2023-03-29 10:38:06.277  INFO 23144 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2023-03-29 10:38:08.362  INFO 23144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-29 10:38:08.420  INFO 23144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+2023-03-29 10:38:12.186  INFO 23144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8401 (http)
+2023-03-29 10:38:12.208  INFO 23144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-29 10:38:12.209  INFO 23144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-03-29 10:38:12.663  INFO 23144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-29 10:38:12.663  INFO 23144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6172 ms
+2023-03-29 10:38:13.375  INFO 23144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2023-03-29 10:38:13.500  INFO 23144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2023-03-29 10:38:13.812  INFO 23144 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-29 10:38:14.173  INFO 23144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-29 10:38:15.765  INFO 23144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-29 10:38:15.835  INFO 23144 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-03-29 10:38:17.339  INFO 23144 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-29 10:38:17.356  INFO 23144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2023-03-29 10:38:18.561  WARN 23144 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 10:38:18.688  INFO 23144 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-29 10:38:19.199  INFO 23144 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-03-29 10:38:19.229  INFO 23144 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-03-29 10:38:19.326  INFO 23144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8401 (http) with context path ''
+2023-03-29 10:38:19.357  INFO 23144 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 14.547 seconds (JVM running for 17.461)
+2023-03-29 10:38:19.365  INFO 23144 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-03-29 10:38:21.808  INFO 23144 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-03-29 10:38:21.809  INFO 23144 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-03-29 10:48:19.366  INFO 23144 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-03-29 10:48:21.084  INFO 23144 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-03-29 10:48:21.085  INFO 23144 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-03-29 10:58:19.373  INFO 23144 --- [task-3] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-03-29 10:58:22.429  INFO 23144 --- [task-3] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-03-29 10:58:22.429  INFO 23144 --- [task-3] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-03-29 11:08:19.379  INFO 23144 --- [task-4] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-03-29 11:08:23.717  INFO 23144 --- [task-4] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-03-29 11:08:23.718  INFO 23144 --- [task-4] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-03-29 11:18:19.396  INFO 23144 --- [task-5] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-03-29 11:18:19.422  INFO 23144 --- [task-5] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-03-29 11:18:19.422  INFO 23144 --- [task-5] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-03-29 11:28:19.391  INFO 23144 --- [task-6] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-03-29 11:28:19.427  INFO 23144 --- [task-6] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-03-29 11:28:19.427  INFO 23144 --- [task-6] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-03-29 11:46:36.920  INFO 18660 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.15.1 on LP-TECH-0VMQ with PID 18660 (C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug\target\classes started by lamech.ngeno in C:\Users\lamech.ngeno\Documents\SMART-PROJECTS\NewFiles\edi-doc-integration-ug)
+2023-03-29 11:46:36.927  INFO 18660 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2023-03-29 11:46:38.819  INFO 18660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-29 11:46:38.915  INFO 18660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 0 JPA repository interfaces.
+2023-03-29 11:46:42.229  INFO 18660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8401 (http)
+2023-03-29 11:46:42.249  INFO 18660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-29 11:46:42.249  INFO 18660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-03-29 11:46:42.760  INFO 18660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-29 11:46:42.761  INFO 18660 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5678 ms
+2023-03-29 11:46:43.514  INFO 18660 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2023-03-29 11:46:43.661  INFO 18660 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2023-03-29 11:46:43.988  INFO 18660 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-29 11:46:44.405  INFO 18660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-29 11:46:45.426  INFO 18660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-29 11:46:45.556  INFO 18660 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-03-29 11:46:47.127  INFO 18660 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-29 11:46:47.147  INFO 18660 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2023-03-29 11:46:48.550  WARN 18660 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 11:46:48.667  INFO 18660 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-29 11:46:49.358  INFO 18660 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-03-29 11:46:49.414  INFO 18660 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-03-29 11:46:49.522  INFO 18660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8401 (http) with context path ''
+2023-03-29 11:46:49.553  INFO 18660 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 13.916 seconds (JVM running for 15.529)
+2023-03-29 11:46:49.568  INFO 18660 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-03-29 11:46:52.045  INFO 18660 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-03-29 11:46:52.046  INFO 18660 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2023-03-29 11:56:49.558  INFO 18660 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2023-03-29 11:56:49.619  INFO 18660 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2023-03-29 11:56:49.620  INFO 18660 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents

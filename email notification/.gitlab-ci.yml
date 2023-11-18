@@ -1,0 +1,49 @@
+# maven_build:
+#  script: mvn verify
+
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  stage: test
+  script: 
+    #- mvn install:install-file -Dfile=/home/gitlab-runner/ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0 -Dpackaging=jar
+    - mvn verify
+
+build:
+  stage: build
+  script: 
+    #- mvn install:install-file -Dfile=/home/gitlab-runner/ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0 -Dpackaging=jar
+    - mvn clean package
+  artifacts:
+    paths:
+      - target/*.jar
+
+deploy_review:
+  stage: deploy
+  script:
+    - rsync -azP --append-verify target/alerts-engine-0.1.jar smart@192.180.3.66:/home/smart/Downloads/Workloads
+  environment:
+    name: dot66
+    url: https://192.180.3.66:9009/alertsengine
+  when: manual
+  only:
+    - master
+  # only:
+  #   - branches
+  # except:
+  #   - master
+
+deploy_prod:
+  stage: deploy
+  script:
+    - echo "Stop running jar and start a new one"
+    - ssh smart@192.180.3.66 "kill $(ps aux | grep '[r]eso-edi' | awk '{print $2}') && sleep 10 && java -jar reso-edi-0.3.jar "
+  environment:
+    name: production
+    url: https://example.com
+  when: manual
+  only:
+  - master

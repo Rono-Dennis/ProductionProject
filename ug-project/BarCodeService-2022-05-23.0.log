@@ -1,0 +1,69 @@
+2022-03-29 14:07:57.195  INFO 75268 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 75268 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2022-03-29 14:07:57.228  INFO 75268 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2022-03-29 14:07:59.326  INFO 75268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-29 14:07:59.361  INFO 75268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2022-03-29 14:08:02.187  INFO 75268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8790 (http)
+2022-03-29 14:08:02.205  INFO 75268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-29 14:08:02.205  INFO 75268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-29 14:08:02.724  INFO 75268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-29 14:08:02.725  INFO 75268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5175 ms
+2022-03-29 14:08:03.358  INFO 75268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2022-03-29 14:08:03.484  INFO 75268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-29 14:08:03.809  INFO 75268 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-29 14:08:04.092  INFO 75268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-29 14:08:05.730  INFO 75268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-29 14:08:05.805  INFO 75268 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-03-29 14:08:08.436  INFO 75268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-29 14:08:08.453  INFO 75268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-29 14:08:09.576  WARN 75268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-29 14:08:09.733  INFO 75268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:08:10.203  INFO 75268 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-03-29 14:08:10.233  INFO 75268 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-29 14:08:10.318  INFO 75268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8790 (http) with context path ''
+2022-03-29 14:08:10.349  INFO 75268 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 15.073 seconds (JVM running for 17.398)
+2022-03-29 14:08:10.358  INFO 75268 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2022-03-29 14:08:10.878  INFO 75268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2022-03-29 14:08:10.879  INFO 75268 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2022-03-29 14:08:10.879  INFO 75268 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2022-03-29 14:08:11.298  INFO 75268 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2022-03-29 14:08:11.298  INFO 75268 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2022-03-29 14:18:10.347  INFO 75268 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2022-03-29 14:18:10.520  INFO 75268 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2022-03-29 14:18:10.520  INFO 75268 --- [task-2] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2022-03-29 14:18:10.520  INFO 75268 --- [task-2] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2022-03-29 14:18:10.644  INFO 75268 --- [task-2] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2022-03-29 14:18:10.644  INFO 75268 --- [task-2] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
+2022-03-29 14:18:45.645  INFO 75268 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-03-29 14:18:45.648  INFO 75268 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:18:45.681  INFO 75268 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-29 14:18:45.683  INFO 75268 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-29 14:18:46.263  INFO 75268 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-29 14:18:57.355  INFO 93872 --- [main] c.s.docs.DocsIntegrationApplication      : Starting DocsIntegrationApplication using Java 11.0.13 on LP-TECH-OVR7 with PID 93872 (C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration\target\classes started by kenan.muga in C:\Users\kenan.muga\Desktop\S.A.P\edi-doc-integration)
+2022-03-29 14:18:57.361  INFO 93872 --- [main] c.s.docs.DocsIntegrationApplication      : The following profiles are active: qa
+2022-03-29 14:18:59.578  INFO 93872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-29 14:18:59.651  INFO 93872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
+2022-03-29 14:19:02.883  INFO 93872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8790 (http)
+2022-03-29 14:19:02.902  INFO 93872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-29 14:19:02.903  INFO 93872 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-29 14:19:03.532  INFO 93872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-29 14:19:03.532  INFO 93872 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6007 ms
+2022-03-29 14:19:04.229  INFO 93872 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: docs]
+2022-03-29 14:19:04.381  INFO 93872 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-29 14:19:04.794  INFO 93872 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-29 14:19:05.104  INFO 93872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-29 14:19:06.286  INFO 93872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-29 14:19:06.357  INFO 93872 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2022-03-29 14:19:08.923  INFO 93872 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-29 14:19:08.941  INFO 93872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'docs'
+2022-03-29 14:19:11.121  WARN 93872 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-29 14:19:11.489  INFO 93872 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-29 14:19:12.322  INFO 93872 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-03-29 14:19:12.370  INFO 93872 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-29 14:19:12.501  INFO 93872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8790 (http) with context path ''
+2022-03-29 14:19:12.546  INFO 93872 --- [main] c.s.docs.DocsIntegrationApplication      : Started DocsIntegrationApplication in 17.344 seconds (JVM running for 19.35)
+2022-03-29 14:19:12.572  INFO 93872 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start UAP Create Documents
+2022-03-29 14:19:12.938  INFO 93872 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2022-03-29 14:19:12.938  INFO 93872 --- [task-1] c.s.docs.service.ClaimsInvLines          : End UAP Create Documents
+2022-03-29 14:19:12.938  INFO 93872 --- [task-1] c.s.docs.service.ClaimsInvLines          : Start EABL Create Documents
+2022-03-29 14:19:13.098  INFO 93872 --- [task-1] c.s.docs.service.ClaimsInvLines          : ****************** CLAIMS FOUND READY TO GENERATE THE DOCUMENTS----------[0]
+2022-03-29 14:19:13.099  INFO 93872 --- [task-1] c.s.docs.service.ClaimsInvLines          : End EABL Create Documents
